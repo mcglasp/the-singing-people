@@ -44,7 +44,7 @@ A monthly meet-up for all-comers in Oxford, UK. Different teachers and locations
 
 www.singingsaturdays.co.uk
 
-![Singing Saturdays website screenshot](/singsat.png)
+![Singing Saturdays website screenshot](/readme-assets/singsat.png)
 
 The initial homepage view offers almost everything you’d want to know on first visiting the site. The callout — “Oxford’s fun, friendly, monthly singing sessions, meeting in the city’s most beautiful locations.” — tells us what this is, what the focus is, and when it is. The adjacent “Book online” indicates that it is open to anyone, and if we’re unsure we can easily navigate to the ‘About’ page in the navbar above. For anyone not certain but wanting to learn more, they can sign up to the newsletter or follow the event on Facebook. Just within view on loading is more information to scroll down to, which explains more about how these events work and why you might want to come to them.
 
@@ -156,3 +156,6 @@ Footer
 
 Mobile First mockup, created with Balsamiq.
 [Mobile First mockup](/readme-assets/wireframes/mobile-first.png)
+
+Desktop mockup, created with Balsamiq.
+[Mobile First mockup](/readme-assets/wireframes/desktop.png)
