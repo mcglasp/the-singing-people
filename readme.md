@@ -59,7 +59,7 @@ A Norwich-based community choir open to all.
 
 www.norwichcommunitychoir.co.uk
 
-![Norwich Community Choir website screenshot](/norcom.png)
+![Norwich Community Choir website screenshot](/readme-assets/norcom.png)
 
 Though this website offers many of the basic information links that we see on the Singing Saturdays website shown above, this site fails the user in a number of ways:
 
@@ -151,3 +151,8 @@ Footer
 Hero image - ‘Join us’ button overlaid?
 Three columns focussing on the above, with further descriptions. Clickable to further info?
 Footer
+
+## Wireframes
+
+Mobile First mockup, created with Balsamiq.
+[Mobile First mockup](/readme-assets/wireframes/mobile-first.png)
