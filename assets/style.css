@@ -2,13 +2,20 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Josefin Slab", serif;
+  box-sizing: border-box;
+  
 }
 
 h1,
 h2,
-h3 {
+h3, .lead, .btn {
   font-family: "Fredericka the Great", cursive;
+  
 }
+
+/* h1, .lead {
+    margin: 0;
+} */
 
 /* ----------------------------------------------- Nav */
 
@@ -16,36 +23,82 @@ h3 {
   height: 72px;
 }
 
-.navbar-brand {
-  letter-spacing: 3px;
+#logo {
+      letter-spacing: 3px;
   font-size: 1.5rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
+      color: #17a2b8;
+}
+
+#navbarDropdown {
+    background-color: #fff;
 }
 
 /* ----------------------------------------------- Carousel */
 
 .carousel-container {
+    overflow: hidden;
   margin: 72px 10px 10px 10px;
-  /* background: url("img/choir_church_burst_window.jpg") center center/cover; */
-  height: 500px;
+  height: 80vh;
   position: relative;
+    display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.carousel-item {
-  height: 500px;
-}
+
 
 /* ----------------------------------------------- Colours */
+
+.blue-text  {
+    color: #17a2b8;
+}
 
 /* ----------------------------------------------- Hero / Callout */
 
 .jumbotron {
   color: #fff;
   position: absolute;
-  padding: 15px 20px 10px 20px;
-  background-color: rgb(233 236 239 / 0.5);
+  padding: 20px;
+  background-color: rgb(233 236 239 / 0.6);
   z-index: 10;
-  width: 400px;
   margin: auto;
+  bottom: 40px;
+  max-width: 80%;
+  max-height: 50%;
+  text-align: center;
 }
+
+.jumbotron button {
+font-size: 2rem;
+}
+
+/* ----------------------------------------------- Info (About, When & Where, Member stories) */
+
+.info {
+    padding: 40px;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #17a2b8;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------------------------- Media queries*/
+
+@media screen and (max-width: 811px) {
+.carousel-item img {
+  overflow: hidden;
+height: 100%;
+}
+}
+
