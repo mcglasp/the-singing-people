@@ -13,9 +13,10 @@ h3, .lead, .btn {
   
 }
 
-/* h1, .lead {
-    margin: 0;
-} */
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* ----------------------------------------------- Nav */
 
@@ -32,21 +33,16 @@ h3, .lead, .btn {
 }
 
 #navbarDropdown {
+    display: inline-block;
     background-color: #fff;
+    padding: 20px;
 }
 
-/* ----------------------------------------------- Carousel */
-
-.carousel-container {
-    overflow: hidden;
-  margin: 72px 10px 10px 10px;
-  height: 80vh;
-  position: relative;
-    display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
+.nav-item {
+    text-align: right;
 }
+
+
 
 
 
@@ -58,16 +54,28 @@ h3, .lead, .btn {
 
 /* ----------------------------------------------- Hero / Callout */
 
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/octagon_singing_sitting.jpg");
+    
+   height: 80vh;
+   width: 100%;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    }
+
 .jumbotron {
+     
   color: #fff;
   position: absolute;
+  bottom: 10vh;
   padding: 20px;
   background-color: rgb(233 236 239 / 0.6);
   z-index: 10;
-  margin: auto;
-  bottom: 40px;
-  max-width: 80%;
-  max-height: 50%;
+  /* margin: auto; */
   text-align: center;
 }
 
@@ -75,10 +83,22 @@ h3, .lead, .btn {
 font-size: 2rem;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 /* ----------------------------------------------- Info (About, When & Where, Member stories) */
 
-.info {
+/* #about  {
+width: 30%;
+margin: 40px;
     padding: 40px;
+    /* margin: 10px; */
+    /* border: 1px solid red; */
+/* } */ */
+
+.info {
+
 }
 
 .circle {
@@ -93,12 +113,24 @@ font-size: 2rem;
     margin-right: auto;
 }
 
+/* ----------------------------------------------- Carousel */
+
+
 /* ----------------------------------------------- Media queries*/
 
 @media screen and (max-width: 811px) {
-.carousel-item img {
-  overflow: hidden;
-height: 100%;
+.carousel {
+  visibility: hidden;
 }
 }
+
+@media screen and (max-width: 811px) {
+.carousel-container {
+    background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
+    /* height: 100%; */
+    background-size: cover;
+
+}
+}
+
 
