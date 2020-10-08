@@ -1,21 +1,38 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: auto;
   font-family: "Josefin Slab", serif;
   box-sizing: border-box;
-  
+  /* align-content: center; */
+}
+
+section {
+    margin: auto;
 }
 
 h1,
 h2,
-h3, .lead, .btn {
+h3,
+.lead,
+.btn {
   font-family: "Fredericka the Great", cursive;
-  
+  text-align: center;
+}
+
+.btn-align {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.center-icon-head {
+  display: block;
+  text-align: center;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* ----------------------------------------------- Nav */
@@ -25,112 +42,215 @@ a {
 }
 
 #logo {
-      letter-spacing: 3px;
+  letter-spacing: 3px;
   font-size: 1.5rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-      color: #17a2b8;
+  color: #17a2b8;
 }
 
 #navbarDropdown {
-    display: inline-block;
-    background-color: #fff;
-    padding: 20px;
+  display: inline-block;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .nav-item {
-    text-align: right;
+  text-align: right;
 }
-
-
-
-
 
 /* ----------------------------------------------- Colours */
 
-.blue-text  {
-    color: #17a2b8;
+.blue-text {
+  color: #17a2b8;
 }
 
 /* ----------------------------------------------- Hero / Callout */
 
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/octagon_singing_sitting.jpg");
-    
-   height: 80vh;
-   width: 100%;
-   background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("img/octagon_singing_sitting.jpg");
+  height: 80vh;
+  width: 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   display: flex;
-    justify-content: center;
-    }
+  justify-content: center;
+}
 
 .jumbotron {
-     
   color: #fff;
   position: absolute;
   bottom: 10vh;
   padding: 20px;
   background-color: rgb(233 236 239 / 0.6);
   z-index: 10;
-  /* margin: auto; */
   text-align: center;
 }
 
 .jumbotron button {
-font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 /* ----------------------------------------------- Info (About, When & Where, Member stories) */
 
-/* #about  {
-width: 30%;
-margin: 40px;
-    padding: 40px;
-    /* margin: 10px; */
-    /* border: 1px solid red; */
-/* } */ */
+#info {
+  margin: 20px 10px;
+  position: relative;
+  top: 0;
+  align-content: center;
+}
 
-.info {
+/* Border-radius to match jumbotron */
 
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.border {
+  padding: 20px;
+  border-radius: 0.3rem;
+  margin: 10px;
+  max-width: 1200px;
+}
+
+blockquote {
+  padding: 10px;
+  text-align: center;
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 1px solid #17a2b8;
-    padding: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #17a2b8;
+  padding: 20px;
 }
+
+.central {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.central ul {
+    padding-left: 90px;
+    list-style: none;
+}
+
+.left-text {
+    text-align: left;
+}
+
+
+
+
 
 /* ----------------------------------------------- Carousel */
 
-
-/* ----------------------------------------------- Media queries*/
-
-@media screen and (max-width: 811px) {
-.carousel {
-  visibility: hidden;
-}
+.carousel-inner {
+  height: 600px;
 }
 
+/* ----------------------------------------------- Form */
+
+.form-surround {
+  margin: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.tea,
+.mlist {
+  padding-top: 10px;
+}
+
+/* Code for customised radio buttons and checkbox written by Vadim Ovchinnikov and found on Stack Overflow. 
+Padding, size and colours customised here. 
+Code reused for checkbox customisation. */
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding: 0.5px;
+  background-clip: content-box;
+  border: 1px solid #17a2b8;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked {
+  background-color: #17a2b8;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  padding: 0.5px;
+  background-clip: content-box;
+  border: 1px solid #17a2b8;
+  background-color: #fff;
+  /* border-radius: 50%; */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #17a2b8;
+}
+
+/* ----------------------------------------------- Social */
+
+.social {
+  height: 200px;
+  margin-top: 10px;
+}
+
+.social .col {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* ----------------------------------------------- Footer */
+
+footer {
+  background-color: #17a2b8;
+  height: 100px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+/* ----------------------------------------------- Media queries */
+
 @media screen and (max-width: 811px) {
-.carousel-container {
+  .carousel {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .carousel-container {
     background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
     /* height: 100%; */
     background-size: cover;
-
+  }
 }
-}
-
-
