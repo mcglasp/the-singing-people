@@ -2,17 +2,17 @@ body {
   padding: 0;
   font-family: "Josefin Slab", serif;
   box-sizing: border-box;
-background-color: #399dcc28;
+  background-color: #399dcc28;
 }
 
 .center {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
-section {
-    margin: auto;
-}
+/* section {
+  margin: auto;
+} */
 
 h1,
 h2,
@@ -21,6 +21,11 @@ h3,
 .btn {
   font-family: "Fredericka the Great", cursive;
   text-align: center;
+}
+
+.btn {
+  background-color: rgb(228, 68, 47);
+  border: none;
 }
 
 .btn-align {
@@ -42,9 +47,10 @@ a {
 /* ----------------------------------------------- Nav */
 
 .navbar {
-  height: 100px;
+  height: 98px;
   background-color: #fff;
-  margin: 2px 0;
+  margin-bottom: 2px;
+  z-index: 15;
 }
 
 #logo {
@@ -55,29 +61,43 @@ a {
   color: rgba(57 157 204 / 0.6);
 }
 
-#navbarDropdown {
+.navbar-collapse {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* #navbarDropdown {
   display: inline-block;
   background-color: #fff;
   padding: 20px;
-}
+  z-index: 10;
+} */
 
 .nav-item {
   text-align: right;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
+hr {
+    margin: 5px;
+    visibility: hidden;
+}
 /* ----------------------------------------------- Colours */
 
 .blue-text {
   color: rgba(57 157 204 / 0.6);
 }
 
-button {
-    background-color: rgb(228, 68, 47)
+.red-text {
+    color: rgb(228, 68, 47);
 }
+
+/* button {
+    background-color: rgb(228, 68, 47);
+} */
 
 /* ----------------------------------------------- Hero / Jumbotron */
 
@@ -92,6 +112,7 @@ button {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .jumbotron {
@@ -107,38 +128,41 @@ button {
 .jumbotron button {
   font-size: 2rem;
   color: #fff;
-    background-color: rgb(228, 68, 47);
-    border: none;
+  background-color: rgb(228, 68, 47);
+  border: none;
 }
-
 
 .nowrap {
   white-space: nowrap;
 }
 
-/* ----------------------------------------------- Info (About, When & Where, Member stories) */
+/* ----------------------------------------------- Info (About, When & Where) */
 
-#info {
+/* #info {
   margin: 20px 10px;
   position: relative;
   top: 0;
   align-content: center;
-}
+} */
+
+
+
+/* .flex-row {
+  display: flex;
+  justify-content: space-between;
+} */
 
 /* Border-radius to match jumbotron */
 
-.flex-row {
-    display: flex;
-    justify-content: space-between;
-}
-
 .border {
-    border-color: #fff;
+  border-color: #fff;
   padding: 20px;
   border-radius: 0.3rem;
-  margin: 10px;
-  max-width: 1200px;
+  margin: 0px 0px;
+  /* max-width: 1200px; */
   background-color: #fff;
+  height: 100%;
+  width: 100%;
 }
 
 /* blockquote {
@@ -146,6 +170,7 @@ button {
   text-align: center;
 } */
 
+/* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
 .circle {
   width: 250px;
   height: 250px;
@@ -153,25 +178,31 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(57 157 204 / 0.6);
   padding: 20px;
+  margin: auto;
+  display: block;
 }
 
-.central {
-    text-align: center;
-    vertical-align: middle;
-}
+/* .central {
+  text-align: center;
+  /* vertical-align: middle; */
+} */
 
 .central ul {
-    padding-left: 90px;
-    list-style: none;
+  /* padding-left: 90px; */
+  /* list-style: none; */
 }
 
-.left-text {
-    text-align: left;
+/* .left-text {
+  text-align: left;
+} */
+
+/* ---------------------------------------------- Member stories */
+
+/* .quote-container {
+    padding: 30px;
+    background-color: white; */
+    /* border: 1px #fff solid; */
 }
-
-
-
-
 
 /* ----------------------------------------------- Carousel */
 
@@ -181,8 +212,10 @@ button {
 
 /* ----------------------------------------------- Form */
 
-.form-surround {
-  margin: 20px;
+.input-container {
+    display: block;
+  max-width: 70%;
+  margin: auto;
 }
 
 label {
@@ -207,13 +240,13 @@ input[type="radio"] {
   height: 13px;
   padding: 0.5px;
   background-clip: content-box;
-  border: 1px solid rgba(57 157 204 / 0.6);
+  border: 1px solid rgb(228, 68, 47);
   background-color: #fff;
   border-radius: 50%;
 }
 
 input[type="radio"]:checked {
-  background-color: rgba(57 157 204 / 0.6);
+  background-color: rgb(228, 68, 47);
 }
 
 input[type="checkbox"] {
@@ -225,20 +258,23 @@ input[type="checkbox"] {
   height: 13px;
   padding: 0.5px;
   background-clip: content-box;
-  border: 1px solid #399dcc;
+  border: 1px solid rgb(228, 68, 47);
   background-color: #fff;
   /* border-radius: 50%; */
 }
 
 input[type="checkbox"]:checked {
-  background-color: rgba(57 157 204 / 0.6);
+  background-color: rgb(228, 68, 47);
 }
+
+
 
 /* ----------------------------------------------- Social */
 
 .social {
   height: 200px;
   margin-top: 10px;
+  color: rgb(228, 68, 47);
 }
 
 .social .col {
