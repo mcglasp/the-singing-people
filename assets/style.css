@@ -182,33 +182,27 @@ hr {
   display: block;
 }
 
-/* .central {
-  text-align: center;
-  /* vertical-align: middle; */
-} */
-
-.central ul {
-  /* padding-left: 90px; */
-  /* list-style: none; */
-}
-
-/* .left-text {
-  text-align: left;
-} */
-
 /* ---------------------------------------------- Member stories */
 
-/* .quote-container {
-    padding: 30px;
-    background-color: white; */
-    /* border: 1px #fff solid; */
-}
 
 /* ----------------------------------------------- Carousel */
 
 .carousel-inner {
-  height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 0px;
+    border-radius: 0.3rem;
 }
+
+/* .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    background: no-repeat 80%/100% 100%;
+    z-index: 16;
+
+} */
+
 
 /* ----------------------------------------------- Form */
 
