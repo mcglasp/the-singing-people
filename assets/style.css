@@ -59,11 +59,23 @@ a {
   font-family: "Fredericka the Great";
   padding-left: 10px;
   color: rgba(57 157 204 / 0.6);
+  /* display: inline; */
+  margin: 0px;
+}
+
+#logo-condensed {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-family: "Fredericka the Great";
+  padding-left: 10px;
+  /* padding-bottom: 0px; */
+  color: rgba(57 157 204 / 0.6);
+  margin: 0px;
 }
 
 .navbar-collapse {
-    background-color: #fff;
-    padding: 20px;
+  background-color: #fff;
+  padding: 20px;
 }
 
 /* #navbarDropdown {
@@ -82,8 +94,8 @@ ul {
 }
 
 hr {
-    margin: 5px;
-    visibility: hidden;
+  margin: 5px;
+  visibility: hidden;
 }
 /* ----------------------------------------------- Colours */
 
@@ -92,7 +104,7 @@ hr {
 }
 
 .red-text {
-    color: rgb(228, 68, 47);
+  color: rgb(228, 68, 47);
 }
 
 /* button {
@@ -145,8 +157,6 @@ hr {
   align-content: center;
 } */
 
-
-
 /* .flex-row {
   display: flex;
   justify-content: space-between;
@@ -155,7 +165,6 @@ hr {
 /* Border-radius to match jumbotron */
 
 .border {
-  border-color: #fff;
   padding: 20px;
   border-radius: 0.3rem;
   margin: 0px 0px;
@@ -163,6 +172,7 @@ hr {
   background-color: #fff;
   height: 100%;
   width: 100%;
+  
 }
 
 /* blockquote {
@@ -182,17 +192,27 @@ hr {
   display: block;
 }
 
+
+
 /* ---------------------------------------------- Member stories */
 
+.card {
+    margin: 5px 0;
+    border: none;
+}
+
+.card-header {
+background-color: #fff;
+}
 
 /* ----------------------------------------------- Carousel */
 
 .carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border: 0px;
-    border-radius: 0.3rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 0px;
+  border-radius: 0.3rem;
 }
 
 /* .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -203,11 +223,10 @@ hr {
 
 } */
 
-
 /* ----------------------------------------------- Form */
 
 .input-container {
-    display: block;
+  display: block;
   max-width: 70%;
   margin: auto;
 }
@@ -261,8 +280,6 @@ input[type="checkbox"]:checked {
   background-color: rgb(228, 68, 47);
 }
 
-
-
 /* ----------------------------------------------- Social */
 
 .social {
@@ -291,16 +308,32 @@ input[type="checkbox"]:checked {
 
 /* ----------------------------------------------- Media queries */
 
-@media screen and (max-width: 811px) {
-  .carousel {
-    visibility: hidden;
-  }
-}
+/* CREDIT Stack Exchange user George Kagan recommended use of {display: none} for changing content depending on screen size. Previously, {visibility: hidden} was removing content but maintaining empty space. */
 
 @media screen and (max-width: 811px) {
+  .carousel {
+    display: none;
+  }
+
   .carousel-container {
     background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
     /* height: 100%; */
     background-size: cover;
+  }
+
+  #logo {
+      display: none;
+  }
+
+#testimonials .col-sm-12, .col-xs-12 {
+margin-bottom: 5px;
+}
+
+}
+
+@media screen and (min-width: 811px) {
+
+  #logo-condensed {
+      display: none;
   }
 }
