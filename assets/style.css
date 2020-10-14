@@ -1,6 +1,7 @@
 body {
   padding: 0;
   font-family: "Josefin Slab", serif;
+  /* font-weight: 800; */
   box-sizing: border-box;
   background-color: #399dcc28;
 }
@@ -58,7 +59,7 @@ a {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgba(57 157 204 / 0.6);
+  color: rgba(57 157 204 / 1);
   /* display: inline; */
   margin: 0px;
 }
@@ -69,7 +70,7 @@ a {
   font-family: "Fredericka the Great";
   padding-left: 10px;
   /* padding-bottom: 0px; */
-  color: rgba(57 157 204 / 0.6);
+  color: rgba(57 157 204 / 1);
   margin: 0px;
 }
 
@@ -100,7 +101,7 @@ hr {
 /* ----------------------------------------------- Colours */
 
 .blue-text {
-  color: rgba(57 157 204 / 0.6);
+  color: rgba(57 157 204 / 1);
 }
 
 .red-text {
@@ -186,7 +187,7 @@ hr {
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgba(57 157 204 / 0.6);
+  border: 1px solid rgba(57 157 204 / 1);
   padding: 20px;
   margin: auto;
   display: block;
@@ -199,9 +200,11 @@ hr {
 .card {
     margin: 5px 0;
     border: none;
+    font-size: 1.2rem;
 }
 
 .card-header {
+    /* border-top: 0.2px solid #399dcc28; */
 background-color: #fff;
 }
 
@@ -222,6 +225,13 @@ background-color: #fff;
     z-index: 16;
 
 } */
+
+/* ------------------------------------------------ Gallery - small screens only */
+
+.gallery-item {
+max-width: 100%; 
+height: auto;
+}
 
 /* ----------------------------------------------- Form */
 
@@ -317,7 +327,7 @@ input[type="checkbox"]:checked {
 
   .carousel-container {
     background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
-    /* height: 100%; */
+    height: 600px;
     background-size: cover;
   }
 
@@ -329,9 +339,15 @@ input[type="checkbox"]:checked {
 margin-bottom: 5px;
 }
 
+.input-container {
+  display: block;
+  max-width: 97%;
+  margin: auto;
 }
 
-@media screen and (min-width: 811px) {
+}
+
+@media screen and (min-width: 812px) {
 
   #logo-condensed {
       display: none;
