@@ -197,6 +197,53 @@ hr {
 
 /* ---------------------------------------------- Member stories */
 
+/* .listing-con {
+    width: 300px:
+} */
+
+.listing {
+    width: 300px;
+   margin: 5px 0;
+    border: none;
+    font-size: 1.2rem;
+/* position: relative; */
+    /* display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column; */
+    /* min-width: 0; */
+    /* word-wrap: break-word; */
+    background-color: #fff;
+    /* background-clip: border-box; */
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: .3rem;
+}
+
+.listing-header {
+    margin: auto;
+    /* padding: 0;
+    margin-bottom: 0; */
+    /* background-color: rgba(0,0,0,.03); */
+    /* border-bottom: 1px solid rgba(0,0,0,.125); */
+}
+
+.listing-img-con {
+    width: 80%;
+    margin: auto;
+}
+
+.listing-img {
+    width:100%;
+}
+
+.listing-text {
+    margin: auto;
+/* flex: 1 1 auto; */
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+
 .card {
     margin: 5px 0;
     border: none;
@@ -353,3 +400,4 @@ margin-bottom: 5px;
       display: none;
   }
 }
+
