@@ -4,6 +4,13 @@ body {
   /* font-weight: 800; */
   box-sizing: border-box;
   background-color: #399dcc28;
+  font-size: 1.1rem;
+}
+
+/* CREDIT The clearfix 'hack' was found on the W3schools website */
+
+.clearfix {
+overflow: auto;
 }
 
 .center {
@@ -18,6 +25,7 @@ body {
 h1,
 h2,
 h3,
+h4
 .lead,
 .btn {
   font-family: "Fredericka the Great", cursive;
@@ -104,6 +112,11 @@ hr {
   color: rgba(57 157 204 / 1);
 }
 
+.blue-text-small {
+ font-size: 80%;
+  color: rgba(57 157 204 / 1);
+}
+
 .red-text {
   color: rgb(228, 68, 47);
 }
@@ -173,24 +186,23 @@ hr {
   background-color: #fff;
   height: 100%;
   width: 100%;
-  
 }
-
-
-
-
 
 /* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
 .circle {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid rgba(57 157 204 / 1);
-  padding: 20px;
+  padding: 1rem;
   margin: auto;
   display: block;
 }
+
+
+
+
 
 .card-img-top {
 height: 250px;
@@ -219,10 +231,68 @@ border-radius: 0.3rem;
 background-color: #fff;
 }
 
+/* ---------------------------------------------- Teachers & Testimonials */
+
+
+.teacher-border {
+  padding: 10px;
+  border-radius: 0.3rem;
+  margin: 0px 0px;
+  /* max-width: 1200px; */
+  background-color: #fff;
+  border:rgba(57 157 204 / 1) 1px solid;
+}
+
+.square-lt {
+    border-radius: 0.3rem;
+    height: 250px;
+  width: 100%;
+  background: url("choir_leader_horizontal.jpg") no-repeat center center/cover;
+}
+
+.square-ct {
+    border-radius: 0.3rem;
+    height: 250px;
+  width: 100%;
+  background: url("img/singers_smiling.jpg") no-repeat center center/cover;
+}
+
+.square-rb {
+    border-radius: 0.3rem;
+    height: 250px;
+  width: 100%;
+  background: url("choir_leader_vertical.jpg") no-repeat center center/cover;
+}
+
+.quote {
+    font-size: 1.5rem;
+}
+
+.cite {
+    float: right;
+    display: block;
+    font-size: 1.2rem;
+}
 
 
 
-/* ---------------------------------------------- Member stories */
+.position-bottom {
+    position: absolute;
+    bottom: 35px;
+    display: block;
+    margin: auto;
+}
+
+#testimonials .circle-small {
+    width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(57 157 204 / 1);
+  padding: 1rem;
+  margin: auto;
+  display: block;
+}
 
 
 /* ----------------------------------------------- Carousel */
