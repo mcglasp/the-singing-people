@@ -277,7 +277,7 @@ background-color: #fff;
 
 
 .position-bottom {
-    position: absolute;
+    /* position: absolute; */
     bottom: 35px;
     display: block;
     margin: auto;
@@ -408,7 +408,18 @@ input[type="checkbox"]:checked {
 /* CREDIT Stack Exchange user George Kagan recommended use of {display: none} for changing content depending on screen size. Previously, {visibility: hidden} was removing content but maintaining empty space. */
 
 @media screen and (max-width: 811px) {
-  .carousel {
+
+   .carousel-container {
+    padding: 0;
+    /* border: 0px; */
+   } 
+
+   #carousel .border {
+       border: 0px solid transparent;
+   }
+
+  
+  /* .carousel {
     display: none;
   }
 
@@ -416,7 +427,7 @@ input[type="checkbox"]:checked {
     background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
     height: 600px;
     background-size: cover;
-  }
+  } */
 
   #logo {
       display: none;
