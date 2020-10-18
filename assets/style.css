@@ -294,6 +294,20 @@ background-color: #fff;
   display: block;
 }
 
+.ipad-about {
+    border-radius: 0.3rem;
+    height: 300px;
+    width: 100%;
+    background: url("choir_leading.jpg") no-repeat top center/cover;
+}
+
+.ipad-how {
+    border-radius: 0.3rem;
+    height: 300px;
+    width: 100%;
+    background: url("choir_leading.jpg") no-repeat top center/cover;
+}
+
 
 /* ----------------------------------------------- Carousel */
 
@@ -312,13 +326,6 @@ background-color: #fff;
     z-index: 16;
 
 } */
-
-/* ------------------------------------------------ Gallery - small screens only */
-
-.gallery-item {
-max-width: 100%; 
-height: auto;
-}
 
 /* ----------------------------------------------- Form */
 
@@ -397,37 +404,38 @@ input[type="checkbox"]:checked {
   background-color: rgba(57 157 204 / 1);
   height: 100px;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   padding: 40px;
   font-size: 1.2rem;
+}
+
+.copyright {
+    float: left;
+}
+
+.emailaddress {
+    float: right;
 }
 
 /* ----------------------------------------------- Media queries */
 
 /* CREDIT Stack Exchange user George Kagan recommended use of {display: none} for changing content depending on screen size. Previously, {visibility: hidden} was removing content but maintaining empty space. */
 
-@media screen and (max-width: 811px) {
+@media screen and (max-width: 768px) {
+
+  
 
    .carousel-container {
     padding: 0;
-    /* border: 0px; */
+   
    } 
 
    #carousel .border {
        border: 0px solid transparent;
    }
 
-  
-  /* .carousel {
-    display: none;
-  }
 
-  .carousel-container {
-    background: url("/assets/img/octagon_singing_sitting.jpg") center no-repeat;
-    height: 600px;
-    background-size: cover;
-  } */
 
   #logo {
       display: none;
@@ -443,6 +451,55 @@ margin-bottom: 5px;
   margin: auto;
 }
 
+.footer-container p {
+    font-size: 0.85rem;
+line-height: 0.5rem;
+}
+
+.copyright {
+    float: none;
+    text-align: center;
+}
+
+.emailaddress {
+    float:none;
+        text-align: center;
+
+}
+
+.center {
+    max-width: 1500;
+}
+
+#about .col-md-12, #how .col-md-12 {
+    padding-left: 0;
+}
+
+/* #about .circle, #how .circle {
+
+  width: 648px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid rgba(57 157 204 / 1);
+  padding: 1rem;
+  margin: auto;
+  display: block;
+} */
+
+/* #how .circle {
+
+  width: 648px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 1px solid rgba(57 157 204 / 1);
+  padding: 1rem;
+  margin: auto;
+  display: block;
+} */
+
+
 }
 
 @media screen and (min-width: 812px) {
@@ -451,4 +508,11 @@ margin-bottom: 5px;
       display: none;
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  .quote-pad {
+        margin-top: 10px;
+    }
+    }
 

@@ -78,7 +78,8 @@
 
     <!--------------------- Jumbotron --------------------->
     <main>
-      <section id="hero">
+<div class="container-fluid">
+     <section id="hero">
         <div class="jumbotron">
           <h1>We sing.</h1>
           <p class="lead nowrap d-none d-sm-block">
@@ -93,13 +94,14 @@
       </section>
       <hr />
       <div class="center">
+      </div> 
         <!--------------------- Info --------------------->
 
         <!-- About -->
 
         <div id="about" class="container">
           <div class="row shadow-sm border border-white align-items-center">
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
               <div class="center-icon-head">
                 <h2 class="blue-text">About The Singing People</h2>
                 <i class="fas fa-info-circle blue-text"></i>
@@ -123,28 +125,31 @@
                 <button type="submit" class="btn btn-info">Join in!</button>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-xl-4 col-sm-12 col-xs-12 d-md-none d-lg-none d-xl-block">
               <img
                 class="circle"
                 src="assets/img/circle/octagon_pose_circle.jpg"
                 alt=""
               />
             </div>
+            <!-- <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 p-3"> -->
+            <div class="ipad-about d-none d-md-block d-lg-block d-xl-none"></div>
+                  <!-- </div> -->
           </div>
         </div>
         <hr />
         <!-- How does it work? -->
 
-        <div class="container">
+        <div id="how" class="container">
           <div class="row shadow-sm border border-white align-items-center">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-xl-4 col-sm-12 col-xs-12 d-md-none d-lg-none d-xl-block">
               <img
                 class="circle"
                 src="assets/img/gallery/gallery_choir_leading.jpg"
                 alt=""
               />
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="center-icon-head">
                 <h2 class="blue-text">How does it work?</h2>
                 <i class="fas fa-info-circle blue-text"></i>
@@ -166,7 +171,9 @@
               </p>
               <div class="btn-align">
                 <button type="submit" class="btn btn-info">Join in!</button>
-              </div>
+              <!-- </div> -->
+            </div>
+              <div class="ipad-how d-none d-md-block d-lg-block d-xl-none"></div>
             </div>
           </div>
         </div>
@@ -183,7 +190,7 @@
                   <i class="fas fa-info-circle blue-text"></i>
                 </div>
                 <div class="row">
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <div class="card shadow-sm">
                       <div class="card-header">
                         <h3 class="blue-text">Come & sing</h3>
@@ -211,7 +218,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <div class="shadow-sm card">
                       <div class="card-header">
                         <h3 class="blue-text">Pub night!</h3>
@@ -240,7 +247,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <div class="shadow-sm card">
                       <div class="card-header">
                         <h3 class="blue-text">Sing for charity</h3>
@@ -268,7 +275,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                     <div class="shadow-sm card">
                       <div class="card-header">
                         <h3 class="blue-text">HNY open mic</h3>
@@ -310,17 +317,17 @@
           <div class="row">
             <!-- Teachers -->
 
-            <div class="quote-container col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="quote-container col-xl-8 col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div class="shadow-sm border border-white">
                 <div class="center-icon-head">
                   <h2 class="blue-text">Our teachers</h2>
                   <i class="fas fa-info-circle blue-text"></i>
                 </div>
                 <div class="row teacher-border no-gutters">
-                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p-3">
+                  <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
                     <div class="square-lt clearfix"></div>
                   </div>
-                  <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-3">
+                  <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
                   <h3 class="blue-text">Dominic Stichbury</h3>
                     <p>
                       Dominic is a singer, choir director, arranger and group
@@ -333,7 +340,7 @@
                 </div>
                 <hr />
                 <div class="row teacher-border no-gutters">
-                  <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 p-3">
+                  <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
                    <h3 class="blue-text">Stephen Taberner</h3>
 
                     <p>
@@ -344,7 +351,7 @@
                       we love him for it!
                     </p>
                   </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p-3">
+                  <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3">
                     <div class="square-rb"></div>
                   </div>
                 </div>
@@ -353,7 +360,31 @@
 
             <!-- Quote -->
 
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+            <div  class="quote-pad col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+              <div class="shadow-sm border border-white">
+                <div class="center-icon-head">
+                  <h2 class="blue-text">What do our members say?</h2>
+                </div>
+                <div class="p-3">
+                  <p class="quote p-3">
+                    "Perfect for beginners and experienced singers alike! The last pub meet up was the most fun I've had this year."<br>
+                    <span class="cite"><em>- David Aston</em></span>
+                  </p>
+                </div>
+                
+                <!-- <div class="square-ct"></div> -->
+                <img
+                  class="circle-small position-bottom"
+                  src="assets/img/singers_smiling.jpg"
+                  alt=""
+                />
+              <!-- </div> -->
+            
+            </div>
+
+<!-- Only visible on medium and large screen sizes; according to Bootstrap breakpoints. -->
+
+            <div class="quote-pad d-sm-none d-xs-none d-lg-block d-md-block d-xl-none col-6">
               <div class="shadow-sm border border-white">
                 <div class="center-icon-head">
                   <h2 class="blue-text">What do our members say?</h2>
@@ -372,7 +403,9 @@
                   alt=""
                 />
               </div>
+              
             </div>
+          </div>
           </div>
         </section>
         <hr />
@@ -461,13 +494,6 @@
         </div>
         </section>
 
-        <!-- Thumbnail Gallery - only visible on screens below 811px -->
-        <!-- 
-        <div class="container">
-        <img src="/assets/img/gallery/gallery_dancing_smiling.jpg" alt="People dancing, singing and smiling." class="img-fluid gallery-item shadow-sm p-3 mb-5 bg-white rounded">
-        <img src="/assets/img/gallery/gallery_choir_leading.jpg" alt="People dancing, singing and smiling." class="img-fluid gallery-item shadow-sm p-3 mb-5 bg-white rounded">
-        <img src="/assets/img/gallery/gallery_singers_smiling.jpg" alt="People dancing, singing and smiling." class="img-fluid gallery-item shadow-sm p-3 mb-5 bg-white rounded">
-        </div> -->
 
         <!---------------- Join us / form ------------------>
         <hr />
@@ -546,7 +572,8 @@
         <!--------------------- Social ------------------->
         <hr />
         <section class="social">
-          <div class="container">
+          <div class="container ">
+          <div class="border border-white shadow-sm">
             <h3>Not ready to join? Follow us instead!</h3>
             <div class="row">
               <div class="col">
@@ -560,14 +587,17 @@
               </div>
             </div>
           </div>
+          </div>
         </section>
       </div>
     </main>
     <!--------------------- Footer ------------------->
 
     <footer class="footer-main">
-      <span class="copyright">&copy; The Singing People 2020</span>
-      <span class="emailaddress">hello@singingpeople.co.uk</span>
+    <div class="footer-container">
+      <p class="copyright">&copy; The Singing People 2020</p>
+      <p class="emailaddress">hello@singingpeople.co.uk</p>
+     </div>
     </footer>
 
     <!--------------------- Scripts ------------------->
