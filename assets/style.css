@@ -1,6 +1,8 @@
 body {
   padding: 0;
-  font-family: "Josefin Slab", serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 300;
   box-sizing: border-box;
   background-color: #399dcc28;
   font-size: 1.1rem;
@@ -49,6 +51,45 @@ a {
   text-decoration: none;
 }
 
+hr {
+  margin: 5px;
+  visibility: hidden;
+}
+
+.red-text {
+  color: rgb(228, 68, 47);
+}
+
+ul {
+  list-style: none;
+}
+
+.blue-text {
+  color: rgba(57 157 204 / 1);
+}
+
+.blue-text-small {
+ font-size: 80%;
+  color: rgba(57 157 204 / 1);
+}
+
+.blue-line {
+    
+    margin: 15px auto;
+    border-top: 3px solid #399dcc28;
+    border-radius: 90%;
+    display: block;
+    width: 20%;
+}
+
+.blue-line-when {
+    margin: 5px auto;
+    border-top: 3px solid #399dcc28;
+    border-radius: 90%;
+    display: block;
+    width: 40%;
+}
+
 /* ----------------------------------------------- Nav */
 
 .navbar {
@@ -94,32 +135,6 @@ a {
   text-align: right;
 }
 
-ul {
-  list-style: none;
-}
-
-hr {
-  margin: 5px;
-  visibility: hidden;
-}
-/* ----------------------------------------------- Colours */
-
-.blue-text {
-  color: rgba(57 157 204 / 1);
-}
-
-.blue-text-small {
- font-size: 80%;
-  color: rgba(57 157 204 / 1);
-}
-
-.red-text {
-  color: rgb(228, 68, 47);
-}
-
-/* button {
-    background-color: rgb(228, 68, 47);
-} */
 
 /* ----------------------------------------------- Hero / Jumbotron */
 
@@ -160,31 +175,16 @@ hr {
 
 /* ----------------------------------------------- Info (About, When & Where) */
 
-/* #info {
-  margin: 20px 10px;
-  position: relative;
-  top: 0;
-  align-content: center;
-} */
-
-/* .flex-row {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* Border-radius to match jumbotron */
-
 .border {
   padding: 20px;
   border-radius: 0.3rem;
   margin: 0px 0px;
-  /* max-width: 1200px; */
   background-color: #fff;
-  /* height: 100%; */
   width: 100%;
 }
 
 /* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
+
 .circle {
   width: 300px;
   height: 300px;
@@ -195,10 +195,6 @@ hr {
   margin: auto;
   display: block;
 }
-
-
-
-
 
 .card-img-top {
 height: 250px;
@@ -222,12 +218,16 @@ border-radius: 0.3rem;
     font-size: 1.2rem;
 }
 
+.card-body {
+    padding-top: 0;
+}
+
 .card-header {
 background-color: #fff;
+border-bottom: 0px;
 }
 
 /* ---------------------------------------------- Teachers & Testimonials */
-
 
 .teacher-border {
   padding: 10px;
@@ -241,21 +241,14 @@ background-color: #fff;
     border-radius: 0.3rem;
     height: 250px;
   width: 100%;
-  background: url("choir_leader_horizontal.jpg") no-repeat center center/cover;
-}
-
-.square-ct {
-    border-radius: 0.3rem;
-    height: 250px;
-  width: 100%;
-  background: url("img/singers_smiling.jpg") no-repeat center center/cover;
+  background: url("img/choir_leader_horizontal.jpg") no-repeat center center/cover;
 }
 
 .square-rb {
     border-radius: 0.3rem;
     height: 250px;
   width: 100%;
-  background: url("choir_leader_vertical.jpg") no-repeat center center/cover;
+  background: url("img/choir_leader_vertical.jpg") no-repeat center center/cover;
 }
 
 .quote {
@@ -291,14 +284,14 @@ background-color: #fff;
     border-radius: 0.3rem;
     height: 300px;
     width: 100%;
-    background: url("choir_leading.jpg") no-repeat top center/cover;
+    background: url("img/singers_smiling.jpg") no-repeat top center/cover;
 }
 
 .ipad-how {
     border-radius: 0.3rem;
     height: 300px;
     width: 100%;
-    background: url("choir_leading.jpg") no-repeat top center/cover;
+    background: url("img/choir_leader_circle.jpg") no-repeat top center/cover;
 }
 
 
@@ -391,8 +384,6 @@ input[type="checkbox"]:checked {
   background-color: rgba(57 157 204 / 1);
   height: 100px;
   color: #fff;
-  /* display: flex;
-  justify-content: space-between; */
   padding: 40px;
   font-size: 1.2rem;
 }
