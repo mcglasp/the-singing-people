@@ -11,7 +11,6 @@ body {
 
 
 .center {
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -25,9 +24,9 @@ h2,
 h3,
 h4
 .lead,
-.btn {
-  font-family: "Fredericka the Great", cursive;
-  text-align: center;
+.btn, .modal-title {
+  font-family:"Fredericka the Great", cursive;
+  text-align: center; 
 }
 
 .btn {
@@ -49,6 +48,11 @@ h4
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 hr {
@@ -105,7 +109,6 @@ ul {
   font-family: "Fredericka the Great";
   padding-left: 10px;
   color: rgba(57 157 204 / 1);
-  /* display: inline; */
   margin: 0px;
 }
 
@@ -124,15 +127,16 @@ ul {
   padding: 20px;
 }
 
-/* #navbarDropdown {
-  display: inline-block;
-  background-color: #fff;
-  padding: 20px;
-  z-index: 10;
-} */
-
 .nav-item {
   text-align: right;
+}
+
+.nav-item:hover {
+/* margin: 5px auto; */
+    border-bottom: 1px solid #399dcc28;
+    /* border-radius: 90%; */
+    /* display: block; */
+    /* width: 40%; */
 }
 
 
@@ -181,6 +185,7 @@ ul {
   margin: 0px 0px;
   background-color: #fff;
   width: 100%;
+  height: 100%;
 }
 
 /* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
@@ -264,7 +269,7 @@ border-bottom: 0px;
 
 
 .position-bottom {
-    bottom: 35px;
+    bottom: 35px ;
     display: block;
     margin: auto;
 }
@@ -276,7 +281,7 @@ border-bottom: 0px;
   border-radius: 50%;
   border: 1px solid rgba(57 157 204 / 1);
   padding: 1rem;
-  margin: auto;
+  margin: 0 auto 15px;
   display: block;
 }
 
@@ -294,6 +299,9 @@ border-bottom: 0px;
     background: url("img/choir_leader_circle.jpg") no-repeat top center/cover;
 }
 
+/* .force-height {
+    height: 280px;
+} */
 
 /* ----------------------------------------------- Carousel */
 
@@ -395,6 +403,16 @@ input[type="checkbox"]:checked {
 .emailaddress {
     float: right;
 }
+/* ----------------------------------------------- Modal */
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----------------------------------------------- Modal */
+
+
 
 /* ----------------------------------------------- Media queries */
 
