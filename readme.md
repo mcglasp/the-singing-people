@@ -20,18 +20,9 @@ Anyone who wants to sing for fun with other people. Joining a choir can feel lik
 * "I just want to turn up to the next event — when is it and where?"
 * "Give me the basic info I need, and show it to me on one page on my phone — and quickly!"
 
-The demographic breakdown of these events tends to favour women of early retire
-ment age. Around a quarter of attendees are men aged 55+, and we have only a handful of under-35s (mainly female).
-
-The choir’s leaders teach at folk and alternative festivals over the summer, and this is an excellent environment in which to connect with younger potential attendees. However, early buy-in is necessary with this age-group, who tend to be busy and active in multiple communities, so can not be relied upon to look up our events when they are next in front of a desktop machine.
-
-We already have a highly engaged mailing list within the older demographic; those who plan further ahead and are happy to email or phone for information. The under-25s are far more impulsive and want access to basic information quickly and easily. Therefore it is essential that this facility is available to them on-the-go, in an accessible, mobile-first format.
-
-
-
 ### What is the site’s value to the user?
 
-The site gives users the information they want in a simple and clear format. It is a single-scroll page to reduce the need to wait for further information to load when the user is out and about. The user can jump to relevant sections and find what they need in seconds. This gives them the ability to get involved when they feel compelled to do so, rather than missing out as life takes over and they move on to other distractions. Though their is enough explanatory text to provide essential information, but site has been designed to be highly visual, featuring multiple images of the group and its events. In this way, the site can cater for the various attention spans of its users: for some, we 'show' rather than 'tell'; however, for others, the ethos and organisation of the group is clearly laid out.  
+The site gives users the information they want in a simple and clear format. It is a single-scroll page to reduce the need to wait for further information to load when the user is out and about. The user can jump to relevant sections and find what they need in seconds. This gives them the ability to get involved when they feel compelled to do so, rather than missing out as life takes over and they move on to other distractions. Though there is enough explanatory text to provide essential information, but site has been designed to be highly visual, featuring multiple images of the group and its events. In this way, the site can cater for the various attention spans of its users: for some, we 'show' rather than 'tell'; however, for others, the ethos and organisation of the group is clearly laid out.  
 
 ### What is its value to me/the owner?
 
@@ -159,10 +150,41 @@ Mobile First mockup, created with Balsamiq.
 [Mobile First mockup](/readme-assets/wireframes/mobile-first.png)
 
 Desktop mockup, created with Balsamiq.
-[Mobile First mockup](/readme-assets/wireframes/desktop.png)
+[Desktop mockup](/readme-assets/wireframes/desktop.png)
 
 ### Updated Wireframes
 
 On beginning to create the live site, it became clear that certain elements of my wireframes would not work in reality. These were updated, as linked to below, to more accurately guide development.
 
 The updated Desktop design is brought more in line with the design of the mobile design, whereby a user scrolls sequentially through the information sections, rather than stacking them side-by-side. This allows for bigger, clearer and easier-to-read text, and for the links to jump directly to the correct section, allowing users to get to the information they want more quickly. I also decided to present the images in a carousel so that they can be skipped past quickly if this is not what the user is interested in; the entire gallery is accessibly but only takes up one image's-worth of space.
+
+# Build
+
+## Issues, bugs & build difficulties
+
+# Testing
+
+There are several elements to focus on in testing the site:
+
+* Responsiveness
+* Accessibility
+* Validation
+* Images
+* Internal links
+* External links
+* CSS transitions
+* Scripts
+
+## Testing Plan
+
+* Check responsiveness of both mobile and desktop sites using two tools: Chrome development tools and responsinator.com. Check for responsiveness errors across all given devices, incluing the Responsive tool available on Chrome. Include landscape views. All page elements should display as expected with regard to CSS media queries and Bootstrap classes.
+* Ensure accessibility standards are met. Manually check code for 'alt' attributes on images, or sr-only classes. Use the Lighthouse tool on Chrome developer tools to evaluate responsiveness. Check contrast ratios for different text element classes; ensure they meet minimum guidelines for readability.
+* Copy all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators. Address issues in code where warnings or errors are returned.
+* Manually check all images to ensure they are displaying at an appropriate resolution and maintaining the correct aspect ratio.
+* Are all internal links positioned appropriately, and do they work? Do external links open to a new tab and land on the correct URL? Manually check every link on the site.
+* Test CSS transition across several browsers. Does the navbar transition on scrolling display correctly on all common browsers (eg. Chrome, Safari, Firefox)?
+* Does the Javascript used to reduce the navbar size work as expected, and across the abovementioned browsers?
+
+The above steps, as mentioned already, must be completed in Chrome, Safari and Firefox browsers. I will also test the site on lesser-known and less-used browsers such as Internet Explorer or Opera, though any minor bugs displaying on these browsers will be of lower priority at this stage in development.
+
+The above should also be tested on real devices, as opposed to the developer tool virtual devices available.
