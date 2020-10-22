@@ -1,3 +1,5 @@
+/* Classes used throughout site */
+
 body {
   padding: 0;
   font-family: "Tajawal", sans-serif;
@@ -28,8 +30,13 @@ h4,
 }
 
 .btn {
-  background-color: rgb(228, 68, 47);
+  background-color: #DD331D;
   border: none;
+  /* font-size: 1.2rem; */
+}
+
+.btn a {
+  font-size: 1.4rem;
 }
 
 .btn:hover {
@@ -40,10 +47,6 @@ h4,
   margin: 10px;
   display: flex;
   justify-content: center;
-}
-
-#hero .btn {
-  font-size: 1.5rem;
 }
 
 .center-icon-head {
@@ -94,6 +97,23 @@ ul {
   width: 40%;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+/* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
+
+.circle {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(57 157 204 / 1);
+  padding: 1rem;
+  margin: auto;
+  display: block;
+}
+
 /* ----------------------------------------------- Nav */
 
 .navbar {
@@ -118,6 +138,10 @@ ul {
   border-bottom: 1px solid #fff;
 }
 
+.navbar-light ul li a {
+    color: #595959!important;
+}
+
 .nav-item:hover {
   border-bottom: 1px solid #399dcc28;
 }
@@ -127,7 +151,7 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgba(57 157 204 / 1);
+  color: rgba(57 157 204 / 1)!important;
   margin: 0px;
   transition: 0.2s;
 }
@@ -137,8 +161,17 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgba(57 157 204 / 1);
+  color: rgba(57 157 204 / 1)!important;
   margin: 0px;
+}
+
+.border {
+  padding: 20px;
+  border-radius: 0.3rem;
+  margin: 0px 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
 
 /* ----------------------------------------------- Hero / Jumbotron */
@@ -157,6 +190,10 @@ ul {
   margin-top: 0px;
 }
 
+#hero .btn {
+  font-size: 1.5rem;
+}
+
 .jumbotron {
   color: #fff;
   position: absolute;
@@ -167,33 +204,7 @@ ul {
   text-align: center;
 }
 
-.nowrap {
-  white-space: nowrap;
-}
-
 /* ----------------------------------------------- Info (About, When & Where) */
-
-.border {
-  padding: 20px;
-  border-radius: 0.3rem;
-  margin: 0px 0px;
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-}
-
-/* CREDIT sitepoint.com user Paul OB. Circle class was not centering. On his advice I changed this to a block element so that margin: auto would take effect. */
-
-.circle {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid rgba(57 157 204 / 1);
-  padding: 1rem;
-  margin: auto;
-  display: block;
-}
 
 .card-img-top {
   height: 250px;
@@ -224,6 +235,13 @@ ul {
 .card-header {
   background-color: #fff;
   border-bottom: 0px;
+}
+
+/* Video */
+
+.embed-responsive-item {
+    border-radius: 0.3rem;
+
 }
 
 /* ---------------------------------------------- Teachers & Testimonials */
@@ -352,6 +370,8 @@ input[type="checkbox"]:checked {
   background-color: rgb(228, 68, 47);
 }
 
+/* ./ credit */
+
 /* ----------------------------------------------- Social */
 
 .social {
@@ -396,7 +416,6 @@ input[type="checkbox"]:checked {
 
 /* ----------------------------------------------- Media queries */
 
-/* CREDIT Stack Exchange user George Kagan recommended use of {display: none} for changing content depending on screen size. Previously, {visibility: hidden} was removing content but maintaining empty space. */
 
 @media screen and (max-width: 768px) {
   .carousel-container {
@@ -443,6 +462,8 @@ input[type="checkbox"]:checked {
   }
 }
 
+/* CREDIT Stack Exchange user George Kagan recommended use of {display: none} for changing content depending on screen size. Previously, {visibility: hidden} was removing content but maintaining empty space. */
+
 @media screen and (min-width: 480px) {
   #logo-condensed {
     display: none;
@@ -453,6 +474,8 @@ input[type="checkbox"]:checked {
     display: none;
   }
 }
+
+/* ./ Credit */
 
 @media screen and (max-width: 1200px) {
   .quote-pad {
