@@ -1,3 +1,5 @@
+// CREDIT W3Schools website for core code below. Reduces navbar size on scroll.
+
 function mobileFunction(x) {
   if (x.matches) { // If media query matches
     window.onscroll = function () {
@@ -9,11 +11,13 @@ function mobileFunction(x) {
           document.body.scrollTop > 80 ||
           document.documentElement.scrollTop > 80
         ) {
-          document.getElementById("navbar").style.height = "54px";
-          document.getElementById("navbar").style.padding = "0px 8px 4px 8px";
-          document.getElementById("logo").style.fontSize = "0.5rem";
+          document.getElementById("navbar").style.minHeight = "45px";
+          document.getElementById("navbar").style.padding = "0px 8px 0px 8px";
+                    document.getElementById("navbar-toggler").style.margin = "4px 8px 4px 8px";
+
+          document.getElementById("logo").style.fontSize = "1rem";
                 } else {
-          document.getElementById("navbar").style.height = "98px";
+          document.getElementById("navbar").style.minHeight = "98px";
           document.getElementById("logo").style.fontSize = "2rem";
           
         }
@@ -28,11 +32,12 @@ function mobileFunction(x) {
           document.body.scrollTop > 80 ||
           document.documentElement.scrollTop > 80
         ) {
-          document.getElementById("navbar").style.height = "45px";
+          document.getElementById("navbar").style.minHeight = "55px";
+                    document.getElementById("navbar").style.padding = "0px 8px 4px 8px";
           document.getElementById("logo").style.fontSize = "1rem";
-          document.getElementById("navbarToggler").style.height = "0.1rem";
+        //   document.getElementById("navbarToggler").style.height = "0.1rem";
         } else {
-          document.getElementById("navbar").style.height = "98px";
+          document.getElementById("navbar").style.minHeight = "98px";
           document.getElementById("logo").style.fontSize = "2rem";
           
         }

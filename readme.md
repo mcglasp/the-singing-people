@@ -8,16 +8,20 @@ This is the website for a laid-back community choir. They hold events every week
 
 ### Who is it for?
 
-Anyone who wants to sing for fun with other people. Joining a choir can feel like a big commitment, so The Anytime Choir’s focus is on being fun, casual and low-commitment. Anyone can turn up anytime!
+Anyone who wants to sing for fun with other people. Joining a choir can feel like a big commitment, so The Singing People's focus is on being fun, casual and low-commitment. Anyone can turn up anytime!
 
 ### User stories
 
-* “I want to meet new people and do something fun.”
-* “I’ve never sung before, but it’s something I’ve always wanted to try.”
-* “I don’t have time to commit to regular rehearsals with my local choir, but I love choral singing.”
-* “I’ve heard that choir singing is great for your mental health, but isn’t it something that only older people do?”
+* "I want to know how to join in, and I want that information immediately!"
+* "I'm nervous about joining this group, so I need to be able to sign up quickly and easily when I'm feeling confident."
+* “I'd like to see lots of pictures that give me an idea of what this group is like — I don't want to trawl through pages of text to find out."
+* “I want to hear the choir so I know that this is kind of thing I want to do."
+* "I can't commit right now — I'd like to check the group out on social media before I decide."
+* "I just want to turn up to the next event — when is it and where?"
+* "Give me the basic info I need, and show it to me on one page on my phone — and quickly!"
 
-The demographic breakdown of these events tends to favour women of early retirement age. Around a quarter of attendees are men aged 55+, and we have only a handful of under-35s (mainly female).
+The demographic breakdown of these events tends to favour women of early retire
+ment age. Around a quarter of attendees are men aged 55+, and we have only a handful of under-35s (mainly female).
 
 The choir’s leaders teach at folk and alternative festivals over the summer, and this is an excellent environment in which to connect with younger potential attendees. However, early buy-in is necessary with this age-group, who tend to be busy and active in multiple communities, so can not be relied upon to look up our events when they are next in front of a desktop machine.
 
@@ -27,7 +31,7 @@ We already have a highly engaged mailing list within the older demographic; thos
 
 ### What is the site’s value to the user?
 
-The site gives users the information they want in a simple and clear format. It is a single-scroll page to reduce the need to wait for further information to load when the user is out and about. The user can jump to relevant sections and find what they need in seconds. This gives them the ability to get involved when they feel compelled to do so, rather than missing out as life takes over and they move on to other distractions.
+The site gives users the information they want in a simple and clear format. It is a single-scroll page to reduce the need to wait for further information to load when the user is out and about. The user can jump to relevant sections and find what they need in seconds. This gives them the ability to get involved when they feel compelled to do so, rather than missing out as life takes over and they move on to other distractions. Though their is enough explanatory text to provide essential information, but site has been designed to be highly visual, featuring multiple images of the group and its events. In this way, the site can cater for the various attention spans of its users: for some, we 'show' rather than 'tell'; however, for others, the ethos and organisation of the group is clearly laid out.  
 
 ### What is its value to me/the owner?
 
@@ -38,7 +42,7 @@ Running a choir of any kind can be an admin-heavy operation. Aside from the musi
 This website does not have ‘competitors’ in the strict sense of the word, as it is not a commercial project, but there will be other similar groups also open to new members, and most people do not have time to become involved in more than one choir community, so there is competition in that sense. Examples we can look to for inspiration (or otherwise!) include:
 
 
-#### Singing Saturdays
+#### Singing Saturdays - Clear and engaging layout and presentation of information.
 
 A monthly meet-up for all-comers in Oxford, UK. Different teachers and locations every month. This is not a formal choir, with a ‘fixed’ membership, but is open to anyone who wishes to join for each event.
 
@@ -53,7 +57,7 @@ Navigation around the site is obvious and intuitive. The links, however, when I 
 Overall, the Singing Saturdays site brings the user value in that it answers questions easily and clearly, making the information easy to find in an intuitive and expected way, while incorporating culturally appropriate design (fun fonts, colour and bright, engaging photos).
 
 
-#### Norwich Community Choir
+#### Norwich Community Choir - poorly designed and difficult to navigate.
 
 A Norwich-based community choir open to all.
 
@@ -63,9 +67,10 @@ www.norwichcommunitychoir.co.uk
 
 Though this website offers many of the basic information links that we see on the Singing Saturdays website shown above, this site fails the user in a number of ways:
 
-This is a group that wishes to welcome new members, but its use of language could be off-putting to those nervous of joining a choir. For example, on the ‘About Us’ page the first sentence includes “highly committed” and “polished performances”, also the home page tells us that one needn’t be a good singer to join the group, which suggests that joining may not be a musically satisfying experience! 
-The advert for the choir leader’s counselling service on the left-hand side is also a distraction.
 The navigation section takes us quickly to different key information elements, but does so in an unnecessarily clunky way. The text is too small, and too wordy. The icons are unnecessary. Arguably, there are too many. 
+
+This is a group that wishes to welcome new members, but its use of language could be off-putting to those nervous of joining a choir.
+The advert for the choir leader’s counselling service on the left-hand side is also a distraction!
 
 Overall, the site fails its target audience in its presentation. I had to work quite hard to confirm that this was a group for both men and women. However, the majority of the images feature only women and the colour scheme is quite traditionally ‘female’ in a way that is now quite outdated. Having said that, this is probably a true reflection of the audience’s culture, though if they wish to attract new members it may be worth rethinking these design elements.
 
@@ -89,11 +94,6 @@ Personnel page - key stakeholders etc | h | 4 | 2
 Gallery | i | 5 | 5 
 Blog - event write-ups, announcements | j | 2 | 1
 Members’ area | k | 1 | 2
-* Archives |
-* Documentation |
-* Membership database |
-* Pay sub fees | 
-
 
 
 
@@ -114,7 +114,6 @@ Plotting the feasibility scores of potential features against their importance d
 We can clearly see that the following should not be attempted in the initial development of the site:
 
 **Low priority (future development)**
-
 * Online store
 * Blog
 * Members’ area
@@ -152,10 +151,18 @@ Hero image - ‘Join us’ button overlaid?
 Three columns focussing on the above, with further descriptions. Clickable to further info?
 Footer
 
-## Wireframes
+## Skeleton
+
+### Initial Wireframes
 
 Mobile First mockup, created with Balsamiq.
 [Mobile First mockup](/readme-assets/wireframes/mobile-first.png)
 
 Desktop mockup, created with Balsamiq.
 [Mobile First mockup](/readme-assets/wireframes/desktop.png)
+
+### Updated Wireframes
+
+On beginning to create the live site, it became clear that certain elements of my wireframes would not work in reality. These were updated, as linked to below, to more accurately guide development.
+
+The updated Desktop design is brought more in line with the design of the mobile design, whereby a user scrolls sequentially through the information sections, rather than stacking them side-by-side. This allows for bigger, clearer and easier-to-read text, and for the links to jump directly to the correct section, allowing users to get to the information they want more quickly. I also decided to present the images in a carousel so that they can be skipped past quickly if this is not what the user is interested in; the entire gallery is accessibly but only takes up one image's-worth of space.
