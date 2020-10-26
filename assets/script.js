@@ -49,36 +49,17 @@ var x = window.matchMedia("(max-width: 990px)")
 mobileFunction(x) // Call listener function at run time
 x.addListener(mobileFunction) // Attach listener function on state changes
 
-// 
+//Automatically closing toggler on click. Solution found at https://bootstrapstudio.io/forums/topic/how-to-get-a-website-menu-to-collapse-after-selection-on-mobile/ and code provided by user buntonn.
+  $(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggler").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  });
 
+  //Adds an offset to anchor tags, allowing headings to be places under below the fixed navbar, rather than be obscured by it. Code found on Stack Overflow and written by user Eric Olsen.
 
-
-// function checkValidation()
-// {
-//     var isValid = true;
-//     if($("#fname").val() == null){
-//         isValid = false;
-//     }
-//     if($("#lname").val() == null){
-//         isValid = false;
-//     }
-//     if($("#email").val() == null){
-//         isValid = false;
-//     }
-//     return isValid;
-// }
-// if(checkValidation())
-//     $("#formModal").show();
-// else
-//     checkValidation();
-
-
-// $('#join-form').on('submit', function(e) {
-  
-//   e.preventDefault(); //stop submit
-  
-//   if ($('#mlist').is(':checked')) {
-//   //Check if checkbox is checked then show modal
-//     $('#formModal').modal('show');
-//   }
-// });
+  window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 120);
+});
