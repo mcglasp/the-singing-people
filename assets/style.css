@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* Classes used throughout site */
 
 body {
@@ -191,6 +184,10 @@ ul {
   padding-left: 10px;
   color: rgb(57,157,204)!important;
   margin: 0px;
+}
+
+.wrapped {
+    display: block;
 }
 
 /* ----------------------------------------------- Hero / Jumbotron */
@@ -423,7 +420,7 @@ label {
 }
 
 .social .red-text:hover, #follow-fixed .red-text:hover {
-  color: rgba(57 157 204 / 1);
+  color: rgb(57,157,204);
 }
 
 #follow-fixed {
@@ -445,15 +442,13 @@ label {
     left: 0;
     padding: 10px 10px 3px 10px;
     background-color: rgba(255, 255, 255, 0.7);
-    -webkit-transition: 0.5s ease-in;
-    -o-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    border-top-right-radius: 0.3rem; 
 }
 
 /* ----------------------------------------------- Footer */
 
 .footer-main {
-  background-color: rgba(57 157 204 / 1);
+  background-color: rgb(57,157,204);
   height: 100px;
   color: #fff;
   padding: 40px;
@@ -544,11 +539,20 @@ label {
   #logo-condensed {
     display: none;
   }
+  .b480 {
+      display: none;
+  }
 }
+
 @media screen and (max-width: 480px) {
   #logo {
     display: none;
   }
+
+    .a480 {
+      display: none;
+  }
+
   /* ./ Credit */
 }
 
@@ -565,7 +569,6 @@ label {
   display: block;
   overflow: hidden;
     
-
 }
 
 .border {
@@ -573,10 +576,6 @@ label {
     padding-right: 10px;
 }
 
-.row, .col-xs-12 {
-/* padding-left: 8px;
-padding-right: 8px; */
-}
 }
 
 

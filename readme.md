@@ -3,7 +3,7 @@
 
  **The Singing People.** A community singing group in need of a simple website that gets straight to the point.
 
-![Initial view of homepage - showing 100vh](/readme-assets/screenshots/initial-view.png)
+![Initial view of homepage - showing 100vh](/readme-assets/screenshots/responsive-example.png)
 
 ## Jump to: 
 * [Final wireframes](#updated-wireframes)
@@ -89,8 +89,11 @@ Overall, the site fails its target audience in its presentation. I had to work q
 | Blog - event write-ups, announcements        | j     | 2                 | 1                |
 | Members’ area                                | k     | 1                 | 2                |
 
-Plotting the feasibility scores of potential features against their importance demonstrates that my focus should be on the following:
 
+![Feasibility v Importance Feature Graph](/readme-assets/screenshots/feasibility-importance-graph.png)
+
+
+Plotting the feasibility scores of potential features against their importance demonstrates that my focus should be on the following:
 
 **High priority**
 
@@ -173,9 +176,9 @@ Desktop mockup, created with Balsamiq.
 
 ### **Colours & Fonts**
 
-By exploring other community and singing websites, I found that couple-schemes were friendly, unchallenging and, largely, fairly unsubtle. Soft blues and reds were being used on sites that had clearly been professionally designed. I found that by using these sorts of colours I could more easily keep the site gender and age neutral, which is extremely important for this group. The blue also served the design by being easy to work into a background, without compromising contrast ratios, while the red could be used for buttons and other 'call-to-action' elements.
+By exploring other community and singing websites, I found that colour-schemes were friendly, unchallenging and, largely, fairly unsubtle. Soft blues and reds were being used on sites that had clearly been professionally designed. I found that by using these sorts of colours I could more easily keep the site gender and age neutral, which is extremely important for this group. The blue also served the design by being easy to work into a background, without compromising contrast ratios, while the red could be used for buttons and other 'call-to-action' elements.
 
-The heading font I used felt casual and fun, which felt right in the contexts I've described above. The sketched quality emphasises the casual nature that is core to this group's approach.
+The heading font I used felt casual and fun, which seemed right in the contexts I've described above. The sketched quality emphasises the casual nature that is core to this group's approach.
 
 The body font was initially a serif font, which contrasted nicely with the heading font, but was slightly too difficult to read. I decided to change this to a sans-serif font, which still contrasts well but is far more legible.
 
@@ -191,7 +194,7 @@ The body font was initially a serif font, which contrasted nicely with the headi
 
 ![Joining form](/readme-assets/screenshots/join.png)
 
-*Several links, including one in the navbar and a large 'Join' button both visible on page load jump to this form. The buttons a clear in their purpose — 'Join in!' or 'Join us'. The form only requires three inputs from the user.*
+*Several links, including one in the navbar and a large 'Join' button both visible on page load jump to this form. The buttons are clear in their purpose — 'Join in!' or 'Join us'. The form only requires three inputs from the user.*
 
 “I'd like to see lots of pictures that give me an idea of what this group is like — I don't want to trawl through pages of text to find out."
 
@@ -209,7 +212,7 @@ The body font was initially a serif font, which contrasted nicely with the headi
 
 ![When and where?](/readme-assets/screenshots/follow-fixed.png)
 
-*I initially left the social media links at the very botto of the scrolling page, as I felt they were not a top priority. I later made the decision to add a small 'fixed' set of icons to the left bottom corner of the site, which scrolls with the user. This gives immediate access to follow the group for anyone on the fence about joining up.*
+*I initially left the social media links at the very bottom of the scrolling page, as I felt they were not a top priority. I later made the decision to add a small 'fixed' set of icons to the left bottom corner of the site, which scrolls with the user. This gives immediate access to follow the group for anyone on the fence about joining up.*
 
 "I just want to turn up to the next event — when is it and where?"
 
@@ -240,7 +243,6 @@ Build, Version control & Deployment:
 * Github - Version control
 * Gitpages - Cloud hosting
 
-
  
 ## Testing
 
@@ -257,15 +259,20 @@ There are several elements to focus on in testing the site:
 
 ### Testing Plan & Results
 
-- Checked responsiveness of both mobile and desktop sites using two tools: Chrome development tools, responsinator.com and amiresponsive.is. Checked for responsiveness errors across all given devices, incluing the Responsive tool available on Chrome. Included landscape views. All page elements should display as expected with regard to CSS media queries and Bootstrap classes. Found and fixed a lack of padding around a recently added carousel container. I added a media query to change the nature of elements on devices below 400px wide, eg. the Galaxy Fold. By reducing padding on the .border class I found that more content was available to the user and the layout generally improved. On these screen sizes I also changed some attributes of the .circle class, as these elements were escaping their containers at this size.
+- Checked responsiveness while building of both mobile and desktop sites using two tools: Chrome development tools, responsinator.com and amiresponsive.is. Checked for responsiveness errors across all given devices, incluing the Responsive tool available on Chrome. Included landscape views. All page elements should display as expected with regard to CSS media queries and Bootstrap classes. Found and fixed a lack of padding around a recently added carousel container. I added a media query to change the nature of elements on devices below 400px wide, eg. the Galaxy Fold. By reducing padding on the .border class I found that more content was available to the user and the layout generally improved. On these screen sizes I also changed some attributes of the .circle class, as these elements were escaping their containers at this size.
 - Ensured accessibility standards are met. Manually checked code for 'alt' attributes on images, or sr-only classes, where necessary. Used the Lighthouse tool on Chrome developer tools to evaluate responsiveness. Result was 97%, revealing the navigation links to have insufficient contrast ratio. Corrected this to bring into line with minimum standards.
-- Copied all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators. This returned warnings relating to the comments used in my HTML code ('The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.'), so these were altered. I should note that I had used this tool throughout development to correct errors and warnings to avoid repicating them throughout the site. I also added some code to automatically collapse the navbar once the user has clicked. This was provided by Bootstrapstudio.io user buntonn.
+- Copied all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators. This returned warnings relating to the comments used in my HTML code ('The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.'), so these were altered. I should note that I had used this tool throughout development to correct errors and warnings to avoid replicating them throughout the site. 
+- On the mobile version a hamburger icon is used to toggler the navigation links. I added some code to automatically collapse this once the user has clicked, otherwise it obscured the content. This was provided by Bootstrapstudio.io user buntonn.
 - Manually checked all images to ensure they are displaying at an appropriate resolution and maintaining the correct aspect ratio.
-- Checked that all internal links jumped to appropriate positions, and that they worked. The section headings are obscured by the navbar. Found a solution on Stack Overflow (credit user Eric Olsen) to apply Javascript to offset the anchor position by a number of pixels (in my case 120px) in order not to obscure heading.
+- Checked that all internal links jumped to appropriate positions, and that they worked. The section headings were obscured by the collapsed, fixed navbar. I found a solution on Stack Overflow (credit user Eric Olsen) to apply Javascript to offset the anchor position by a number of pixels (in my case 120px) in order not to obscure headings.
 - Ensured that external links open to a new tab and land on the correct URL. I found that my Instagram Fontawesome icon was actually directing to Twitter. This has been corrected.
-- Tested CSS/Javascript navbar transition across several browsers. I found that, regardless of the browser used, if I stopped scrolling at a very specific point, the navbar jumped continously between two states. 
+- Tested CSS/Javascript navbar transition across several browsers. I found that, regardless of the browser used, if I stopped scrolling at a very specific point, the navbar jumped continously between two states. As this is a very minor design issue, and does not affect functionality, I will investigate this further during future development and when my Javascript skills are improved.
 
-The above steps were completed in Chrome, Safari and Firefox browsers, and using real devices where possible.
+The above steps were completed in Chrome, Safari and Firefox browsers, and using real devices where possible. Most elements appeared and functioned identically across all three browsers, though there were CSS elements being overridden in Safari. I updated the browser version, which fixed a number of problems, though running the CSS code through an Autoprefixer (as listed below) solved other minor issues.
+
+### Existing compromises & areas for future development
+
+My first priority for future development, and when my Javascript skills allow, will be to add a modal popup confirming the user has correctly completed the sign-up form. This was originally included in the build, but I found that I was unable to have the form complete validation of required fields and have the appearance of the modal be dependent on the results of these tests. More detailed Javascript will be required for this functionality, but it is crucial to the user's positive interaction with the site to receive this kind of feedback.
 
 # Online Rescources
 
@@ -278,9 +285,10 @@ I used the online resources below for general guidance and solutions to specific
 - Codepen (specific solutions to coding problems)
 - Freecodecamp (specific solutions to coding problems)
 - W3 Schools (specific code examples and tutorials)
-- Responsinator.com (check responsiveness)
+- The Responsinator (check responsiveness)
 - AmIResponsive (check responsiveness)
-- Jigsaw and W3Schools (code validators)
+- Autoprefixer CSS online (increase compatibility across browsers)
+- Jigsaw and W3 Schools (code validators)
 - Google Chrome (development tools)
 - Webaim.org (accessibility guidance)
 - favicon.io (favicon generator)
@@ -288,14 +296,15 @@ I used the online resources below for general guidance and solutions to specific
 
 # Credits & Acknowledgements
 
-A small amount of code was provided by forum users from several websites:
+A small amount of code was provided by forum users from several websites (see below).
 
-Thanks to the following Stack Overflow users for their guidance in solving various issues as credited in the HTML & CSS code:
+Thanks to the following Stack Overflow users for their guidance in solving various issues as credited in the HTML, CSS and Javascript code:
 
-- Julian S, Sean, Vadim Ovchinnikov, George Kagan
+- Julian S, Sean, Vadim Ovchinnikov, George Kagan, Eric Olsen
 
 Thanks also to:
 - Freecodecamp user ellereeeeee
 - Sitepoint user Paul OB
+- Bootstrap Studio user buntonn
 
 Thanks also to my mentor Antonio, the Code Institute Tutors, Jim Lynx and the Slack community.
