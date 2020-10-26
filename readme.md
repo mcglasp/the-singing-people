@@ -255,7 +255,7 @@ There are several elements to focus on in testing the site:
 - CSS transitions
 - Scripts
 
-### Testing Plan
+### Testing Plan & Results
 
 - Checked responsiveness of both mobile and desktop sites using two tools: Chrome development tools, responsinator.com and amiresponsive.is. Checked for responsiveness errors across all given devices, incluing the Responsive tool available on Chrome. Included landscape views. All page elements should display as expected with regard to CSS media queries and Bootstrap classes. Found and fixed a lack of padding around a recently added carousel container. I added a media query to change the nature of elements on devices below 400px wide, eg. the Galaxy Fold. By reducing padding on the .border class I found that more content was available to the user and the layout generally improved. On these screen sizes I also changed some attributes of the .circle class, as these elements were escaping their containers at this size.
 - Ensured accessibility standards are met. Manually checked code for 'alt' attributes on images, or sr-only classes, where necessary. Used the Lighthouse tool on Chrome developer tools to evaluate responsiveness. Result was 97%, revealing the navigation links to have insufficient contrast ratio. Corrected this to bring into line with minimum standards.
@@ -266,8 +266,6 @@ There are several elements to focus on in testing the site:
 - Tested CSS/Javascript navbar transition across several browsers. I found that, regardless of the browser used, if I stopped scrolling at a very specific point, the navbar jumped continously between two states. 
 
 The above steps were completed in Chrome, Safari and Firefox browsers, and using real devices where possible.
-
-## Results from Testing
 
 # Online Rescources
 

@@ -39,7 +39,7 @@ h4,
 }
 
 .btn:hover {
-  background-color: rgba(57 157 204 / 1);
+  background-color: rgb(57,157,204);
 }
 
 .btn-align {
@@ -73,7 +73,7 @@ ul {
 }
 
 .blue-text {
-  color: rgba(57 157 204 / 1);
+  color: rgb(57,157,204);
 }
 
 .red-text {
@@ -107,7 +107,7 @@ ul {
   height: 300px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgba(57 157 204 / 1);
+  border: 1px solid rgb(57,157,204);
   padding: 1rem;
   margin: auto auto 10px auto;
   display: block;
@@ -161,7 +161,7 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgba(57 157 204 / 1)!important;
+  color: rgb(57,157,204)!important;
   margin: 0px;
   transition: 0.2s;
 }
@@ -171,7 +171,7 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgba(57 157 204 / 1)!important;
+  color: rgb(57,157,204)!important;
   margin: 0px;
 }
 
@@ -265,7 +265,7 @@ ul {
   border-radius: 0.3rem;
   margin: 0px 0px;
   background-color: #fff;
-  border: rgba(57 157 204 / 1) 1px solid;
+  border: rgb(57,157,204) 1px solid;
 }
 
 #teachers-members h2 {
@@ -306,7 +306,7 @@ ul {
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgba(57 157 204 / 1);
+  border: 1px solid rgb(57,157,204);
   padding: 1rem;
   margin: 0 auto 15px;
   display: block;
