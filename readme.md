@@ -1,4 +1,4 @@
-# Community Choir Website — The Singing People
+# Community Choir Website —[The Singing People](https://mcglasp.github.io/the-singing-people)
 
 
  **The Singing People.** A community singing group in need of a simple website that gets straight to the point.
@@ -24,13 +24,13 @@ Anyone interested in joining the group. Joining a choir can feel like a big comm
 
 ### **User stories**
 
-- "I want to know how to join in, and I want that information immediately!"
-- "I'm nervous about joining this group, so I need to be able to sign up quickly and easily when I'm feeling confident."
-- “I'd like to see lots of pictures that give me an idea of what this group is like — I don't want to trawl through pages of text to find out."
-- “I want to hear the choir so I know that this is kind of thing I want to do."
-- "I can't commit right now — I'd like to check the group out on social media before I decide."
-- "I just want to turn up to the next event — when is it and where?"
-- "Give me the basic info I need, and show it to me on one page on my phone — and quickly!"
+- "As a young and enthusiastic singer I want to know how to join in, and I want that information immediately!"
+- "As someone new to singing I'm nervous about joining this group, so I need to be able to sign up quickly and easily when I'm feeling confident."
+- “As an active community singer I'd like to see lots of pictures that give me an idea of what this group is like — I don't want to trawl through pages of text to find out."
+- “As an experienced choir member I want to hear the choir so I know that this is kind of thing I want to do."
+- "As someone with lots of other interests I can't commit right now — I'd like to check the group out on social media before I decide."
+- "As a singer with previous experience I just want to turn up to the next event — when is it and where?"
+- "As a busy person I want you to give me the basic info I need, and show it to me on one page on my phone — and quickly!"
 
 ### **What is the site’s value to the user?**
 
@@ -231,9 +231,10 @@ The body font was initially a serif font, which contrasted nicely with the headi
 Languages:
 * HTML5
 * CSS3
-* Javascript & JQuery
+* Javascript
 
-Integrations:
+Integrations & Libraries
+* JQuery
 * Bootstrap
 * Google fonts
 * Fontawesome
@@ -242,7 +243,7 @@ Build, Version control & Deployment:
 * Gitpod - for building. Incorporated several IDE extensions, including Auto Close Tag, Bootstrap 4CDN Snippet, HTMLHint, Prettier and Live Server.
 * Github - Version control
 * Gitpages - Cloud hosting
-
+* Browsers: Chrome, Firefox, Safari
  
 ## Testing
 

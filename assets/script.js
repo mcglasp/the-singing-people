@@ -58,8 +58,3 @@ x.addListener(mobileFunction) // Attach listener function on state changes
     }
   });
 
-  //Adds an offset to anchor tags, allowing headings to be places under below the fixed navbar, rather than be obscured by it. Code found on Stack Overflow and written by user Eric Olsen.
-
-  window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 120);
-});

@@ -228,6 +228,10 @@ ul {
   text-align: center;
 }
 
+.jumbotron p {
+    margin-bottom: 10px; 
+}
+
 /* ----------------------------------------------- Info (About, When & Where) */
 
 .ipad-about {
@@ -447,20 +451,17 @@ label {
 
 /* ----------------------------------------------- Footer */
 
-.footer-main {
+footer {
   background-color: rgb(57,157,204);
-  height: 100px;
+  height: 120px;
   color: #fff;
-  padding: 40px;
+  padding: 33px;
   font-size: 1.2rem;
+  text-align: center;
 }
 
-.copyright {
-  float: left;
-}
-
-.emailaddress {
-  float: right;
+footer p {
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------- Modal */
@@ -539,7 +540,7 @@ label {
   #logo-condensed {
     display: none;
   }
-  .b480 {
+  .a480 {
       display: none;
   }
 }
@@ -549,7 +550,7 @@ label {
     display: none;
   }
 
-    .a480 {
+    .b480 {
       display: none;
   }
 
@@ -568,7 +569,6 @@ label {
   margin: auto auto 10px auto;
   display: block;
   overflow: hidden;
-    
 }
 
 .border {
