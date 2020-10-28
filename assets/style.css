@@ -5,7 +5,7 @@ body {
   font-family: "Tajawal", sans-serif;
   font-weight: 300;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #399dcc28;
   font-size: 1.1rem;
 }
@@ -31,7 +31,7 @@ h4,
 }
 
 .btn {
-  background-color: #DD331D;
+  background-color: #dd331d;
   border: none;
 }
 
@@ -40,7 +40,7 @@ h4,
 }
 
 .btn:hover {
-  background-color: rgb(57,157,204);
+  background-color: rgb(57, 157, 204);
 }
 
 .btn-align {
@@ -49,8 +49,8 @@ h4,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 a {
@@ -78,7 +78,7 @@ ul {
 }
 
 .blue-text {
-  color: rgb(57,157,204);
+  color: rgb(57, 157, 204);
 }
 
 .red-text {
@@ -111,9 +111,9 @@ ul {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgb(57,157,204);
+  border: 1px solid rgb(57, 157, 204);
   padding: 1rem;
   margin: auto auto 10px auto;
   display: block;
@@ -129,7 +129,7 @@ ul {
   height: 100%;
 }
 
-/* ----------------------------------------------- Nav */
+/* Nav */
 
 .navbar {
   min-height: 98px;
@@ -158,7 +158,7 @@ ul {
 }
 
 .navbar-light ul li a {
-    color: #595959!important;
+  color: #595959 !important;
 }
 
 .nav-item:hover {
@@ -170,7 +170,7 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgb(57,157,204)!important;
+  color: rgb(57, 157, 204) !important;
   margin: 0px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -182,18 +182,24 @@ ul {
   font-size: 2rem;
   font-family: "Fredericka the Great";
   padding-left: 10px;
-  color: rgb(57,157,204)!important;
+  color: rgb(57, 157, 204) !important;
   margin: 0px;
 }
 
 .wrapped {
-    display: block;
+  display: block;
 }
 
-/* ----------------------------------------------- Hero / Jumbotron */
+/* Hero & Jumbotron */
 
 #hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.2))
+    ),
     url("img/octagon_singing_sitting.jpg");
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("img/octagon_singing_sitting.jpg");
@@ -201,7 +207,7 @@ ul {
     url("img/octagon_singing_sitting.jpg");
   height: 80vh;
   width: 100%;
-  background-position: center;
+  background-position: 0% 25%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -209,8 +215,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 0px;
 }
 
@@ -223,16 +229,17 @@ ul {
   position: absolute;
   bottom: 10vh;
   padding: 20px;
-  background-color: rgb(233 236 239 / 0.6);
+  background-color: rgb(233 236 239 / 0.5);
   z-index: 10;
   text-align: center;
 }
 
 .jumbotron p {
-    margin-bottom: 10px; 
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
-/* ----------------------------------------------- Info (About, When & Where) */
+/* Info pages (About, How, When & Where) */
 
 .ipad-about {
   border-radius: 0.3rem;
@@ -262,7 +269,7 @@ ul {
 .card-img-top {
   height: 250px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-top: 10px;
   border-radius: 0.3rem;
 }
@@ -280,24 +287,24 @@ ul {
   list-style: georgian;
 }
 
-/* ---------------------------------------------- Video */
+/* Video */
 
 .embed-responsive-item {
   border-radius: 0.3rem;
 }
 
-/* ---------------------------------------------- Teachers & Testimonials */
+/* Teachers & Quotes */
 
 .teacher-border {
   padding: 10px;
   border-radius: 0.3rem;
   margin: 0px 0px;
   background-color: #fff;
-  border: rgb(57,157,204) 1px solid;
+  border: rgb(57, 157, 204) 1px solid;
 }
 
 #teachers-members h2 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .square-lt {
@@ -325,7 +332,7 @@ ul {
   font-size: 1.2rem;
 }
 
-.small {
+.small-icon {
   font-size: 0.9rem;
 }
 
@@ -333,15 +340,15 @@ ul {
   width: 280px;
   height: 280px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgb(57,157,204);
+  border: 1px solid rgb(57, 157, 204);
   padding: 1rem;
   margin: 0 auto 15px;
   display: block;
 }
 
-/* ----------------------------------------------- Carousel */
+/* Gallery */
 
 .carousel-inner {
   position: relative;
@@ -351,7 +358,7 @@ ul {
   border-radius: 0.3rem;
 }
 
-/* ----------------------------------------------- Form */
+/* Form */
 
 .input-container {
   display: block;
@@ -365,8 +372,8 @@ Code reused for checkbox customisation. */
 
 input[type="radio"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -383,8 +390,8 @@ input[type="radio"]:checked {
 
 input[type="checkbox"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -409,7 +416,7 @@ label {
   padding-top: 10px;
 }
 
-/* ----------------------------------------------- Social */
+/* Social */
 
 .social {
   height: 200px;
@@ -423,36 +430,37 @@ label {
   padding-top: 20px;
 }
 
-.social .red-text:hover, #follow-fixed .red-text:hover {
-  color: rgb(57,157,204);
+.social .red-text:hover,
+#follow-fixed .red-text:hover {
+  color: rgb(57, 157, 204);
 }
 
 #follow-fixed {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 10px 10px 3px 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-top-right-radius: 0.3rem; 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 3px 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top-right-radius: 0.3rem;
 }
 
-/* ----------------------------------------------- Footer */
+/* Footer */
 
 footer {
-  background-color: rgb(57,157,204);
+  background-color: rgb(57, 157, 204);
   height: 120px;
   color: #fff;
   padding: 33px;
@@ -461,21 +469,10 @@ footer {
 }
 
 footer p {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-/* ----------------------------------------------- Modal */
-
-.modal-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/* ----------------------------------------------- Media queries */
+/* Media queries */
 
 @media screen and (max-width: 1200px) {
   .quote-pad {
@@ -488,7 +485,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-
   .carousel-container {
     padding: 20px 5px 5px 5px;
   }
@@ -512,20 +508,6 @@ footer p {
     font-size: 0.85rem;
     line-height: 0.5rem;
   }
-
-  .copyright {
-    float: none;
-    text-align: center;
-  }
-
-  .emailaddress {
-    float: none;
-    text-align: center;
-  }
-
-  .center {
-    max-width: 1500px;
-  }
 }
 
 @media screen and (max-width: 580px) {
@@ -541,7 +523,7 @@ footer p {
     display: none;
   }
   .a480 {
-      display: none;
+    display: none;
   }
 }
 
@@ -550,33 +532,27 @@ footer p {
     display: none;
   }
 
-    .b480 {
-      display: none;
+  .b480 {
+    display: none;
   }
-
   /* ./ Credit */
 }
 
 @media screen and (max-width: 400px) {
+  .circle {
+    width: 100%;
+    height: 190px;
+    padding: 5px;
+    border-radius: 0.3rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: auto auto 10px auto;
+    display: block;
+    overflow: hidden;
+  }
 
-    .circle {
-  width: 100%;
-  height: 190px;
-  padding: 5px;
-  border-radius: 0.3rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: auto auto 10px auto;
-  display: block;
-  overflow: hidden;
-}
-
-.border {
+  .border {
     padding-left: 10px;
     padding-right: 10px;
+  }
 }
-
-}
-
-
-
