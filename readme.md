@@ -6,9 +6,9 @@
 ![Initial view of homepage - showing 100vh](/readme-assets/screenshots/responsive-example.png)
 
 ## Jump to:
-* [Final wireframes](#updated-wireframes)
-* [Build report, testing, existing issues](#build)
-* [Implementation of features resulting from user stories](#design-responses-to-user-stories)
+- [Final wireframes](#updated-wireframes)
+- [Build report, testing, existing issues](#build)
+- [Implementation of features resulting from user stories](#design-responses-to-user-stories)
 
 # UX Considerations
 
@@ -130,18 +130,18 @@ Fundamental user questions to answer on loading the site:
 
 Potential layouts to facilitate the above structure
 
-* navbar (Inline. Reduce to toggler on mobile)
-   * Who/what/how
-   * Where/when
-   * Gallery
-   * Join
+- navbar (Inline. Reduce to toggler on mobile)
+   - Who/what/how
+   - Where/when
+   - Gallery
+   - Join
 
-* hero image
+- hero image
 — ‘Join us’ button overlaid? 
-* Stack sections with basic info as per navbar. 
+- Stack sections with basic info as per navbar. 
 Clickable to further info.
-* Social media links
-* Footer
+- Social media links
+- Footer
 
 
 ## **Skeleton**
@@ -228,21 +228,21 @@ The body font was initially a serif font, which contrasted nicely with the headi
 ## Technologies used
 
 Languages:
-* HTML5
-* CSS3
-* Javascript
+- HTML5
+- CSS3
+- Javascript
 
 Integrations & Libraries
-* JQuery
-* Bootstrap
-* Google fonts
-* Fontawesome
+- JQuery
+- Bootstrap
+- Google fonts
+- Fontawesome
 
 Build, Version control & Deployment:
-* Gitpod - for building. Incorporated several IDE extensions, including Auto Close Tag, Bootstrap 4CDN Snippet, HTMLHint, Prettier and Live Server.
-* Github - Version control
-* Gitpages - Cloud hosting
-* Browsers used for build and testing: Chrome (including mobile), Firefox, Safari (including mobile)
+- Gitpod - for building. Incorporated several IDE extensions, including Auto Close Tag, Bootstrap 4CDN Snippet, HTMLHint, Prettier and Live Server.
+- Github - Version control
+- Gitpages - Cloud hosting
+- Browsers used for build and testing: Chrome (including mobile), Firefox, Safari (including mobile)
 
 ## Testing
 
@@ -259,13 +259,13 @@ There are several elements to focus on in testing the site:
 
 ### Testing Plan & Results
 
-- ** Checked responsiveness ** while building both mobile and desktop sites using three tools: Chrome developer tools, responsinator.com and amiresponsive.is. Checked for responsiveness errors across all given devices, including the Responsive tool available on Chrome; landscape views were included. All page elements display as expected with regard to CSS media queries and Bootstrap classes. I found and fixed a lack of padding around a recently added carousel container. I added a media query to change the nature of elements on devices below 400px wide, eg. the Galaxy Fold. By reducing padding on the .border class I found that more content was available to the user and the layout generally improved. On these screen sizes I also changed some attributes of the .circle class, as these elements were escaping their containers at this size.
-- ** Ensured accessibility standards are met. ** I manually checked code for 'alt' attributes on images, or sr-only classes, where necessary. Google’s Lighthouse tool on Chrome was used to evaluate accessibility. The result was 97%, revealing the navigation links to have insufficient contrast ratio. This was corrected to bring it into line with minimum standards.
-- ** Copied all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators. ** This returned warnings relating to the comments used in my HTML code ('The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.'), so these were altered. I should note that I had used this tool throughout development to correct errors and warnings to avoid replicating them throughout the site.
+- **Checked responsiveness** while building both mobile and desktop sites using three tools: Chrome developer tools, responsinator.com and amiresponsive.is. Checked for responsiveness errors across all given devices, including the Responsive tool available on Chrome; landscape views were included. All page elements display as expected with regard to CSS media queries and Bootstrap classes. I found and fixed a lack of padding around a recently added carousel container. I added a media query to change the nature of elements on devices below 400px wide, eg. the Galaxy Fold. By reducing padding on the .border class I found that more content was available to the user and the layout generally improved. On these screen sizes I also changed some attributes of the .circle class, as these elements were escaping their containers at this size.
+- **Ensured accessibility standards are met.** I manually checked code for 'alt' attributes on images, or sr-only classes, where necessary. Google’s Lighthouse tool on Chrome was used to evaluate accessibility. The result was 97%, revealing the navigation links to have insufficient contrast ratio. This was corrected to bring it into line with minimum standards.
+- **Copied all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators.** This returned warnings relating to the comments used in my HTML code ('The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.'), so these were altered. I should note that I had used this tool throughout development to correct errors and warnings to avoid replicating them throughout the site.
 - On the mobile version a hamburger icon is used to toggle the navigation links. I added some code to automatically collapse this once the user has clicked, otherwise it obscured the content.
-- Manually ** checked all images to ensure they are displaying at an appropriate resolution ** and maintaining the correct aspect ratio, which they were.
-- Checked that all ** internal links ** jumped to appropriate positions, and that they worked. The section headings were obscured by the collapsed, fixed navbar. I added some ‘hidden’ divs to anchor the links to more appropriate places.
-- Ensured that ** external links open to a new tab ** and land on the correct URL. I found that my Instagram Fontawesome icon was actually directing to Twitter. This has been corrected.
+- Manually **checked all images to ensure they are displaying at an appropriate resolution** and maintaining the correct aspect ratio, which they were.
+- Checked that all **internal links** jumped to appropriate positions, and that they worked. The section headings were obscured by the collapsed, fixed navbar. I added some ‘hidden’ divs to anchor the links to more appropriate places.
+- Ensured that **external links open to a new tab** and land on the correct URL. I found that my Instagram Fontawesome icon was actually directing to Twitter. This has been corrected.
 - Tested CSS/Javascript navbar transition across several browsers. I found that, regardless of the browser used, if I stopped scrolling at a very specific point, the navbar jumped continuously between two states. As this is a very minor design issue, and does not affect functionality, I will investigate this further during future development and when my Javascript skills are improved.
 
 The above steps were completed in Chrome, Safari and Firefox browsers, and using real devices where possible. Most elements appeared and functioned identically across all three browsers, though there were CSS elements being overridden in Safari. I updated the browser version, which fixed a number of problems, though running the CSS code through an Autoprefixer (as listed below) solved other minor issues.
@@ -310,6 +310,8 @@ I used the online resources below for general guidance and solutions to specific
 
 
 # Credits & Acknowledgements
+
+All photographic and video content was created either by myself or attendees of the annual Stephen Taberner Singing Weekends.
 
 A small amount of code was provided by forum users from several websites (see below).
 
