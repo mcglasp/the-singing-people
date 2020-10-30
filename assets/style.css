@@ -129,6 +129,11 @@ ul {
   height: 100%;
 }
 
+.offset-anchor {
+position: relative;
+top: -120px;
+}
+
 /* Nav */
 
 .navbar {
