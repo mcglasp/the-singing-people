@@ -129,11 +129,19 @@ ul {
   height: 100%;
 }
 
-.offset-anchor {
+/* .offset-anchor {
   display: block;
   position: relative;
   top: -100px;
   visibility: hidden;
+} */
+
+.offset-anchor::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
 }
 
 /* Nav */
