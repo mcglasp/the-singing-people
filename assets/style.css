@@ -130,10 +130,10 @@ ul {
 }
 
 .offset-anchor {
-    display: block;
-position: relative;
-top: -100px;
-visibility: hidden;
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
 }
 
 /* Nav */
