@@ -129,13 +129,13 @@ ul {
   height: 100%;
 }
 
-/* CREDIT Chris Coyier of CSS Tricks website */
+/* CREDIT Chris Coyier of CSS Tricks and Chris Ferdinandi from Codepen */
 
-:target {
+.offset-anchor {
   display: block;
-  position: relative;
-  top: -120px; 
-  visibility: hidden;
+  margin: 0;
+  scroll-margin-top: 3em;
+  /* visibility: hidden; */
 }
 
 /* Nav */
@@ -490,6 +490,13 @@ footer p {
 
   .no-img {
     display: none;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -120px !important;
+    visibility: hidden;
   }
 }
 
