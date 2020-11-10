@@ -49,12 +49,12 @@ mobileFunction(x);
 x.addListener(mobileFunction);
 
 //Automatically closing toggler on click. Solution found at https://bootstrapstudio.io/forums/topic/how-to-get-a-website-menu-to-collapse-after-selection-on-mobile/ and code provided by user buntonn.
-$(".navbar-nav li a").click(function (event) {
-  // check if window is small enough so dropdown is created
-  var toggle = $(".navbar-toggler").is(":visible");
-  if (toggle) {
-    $(".navbar-collapse").collapse("hide");
-  }
-});
+// $(".navbar-nav li a").click(function (event) {
+//   // check if window is small enough so dropdown is created
+//   var toggle = $(".navbar-toggler").is(":visible");
+//   if (toggle) {
+//     $(".navbar-collapse").collapse("hide");
+//   }
+// });
 
 
