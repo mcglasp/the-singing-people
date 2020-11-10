@@ -131,7 +131,10 @@ ul {
 
 /* CREDIT Chris Coyier of CSS Tricks and Chris Ferdinandi from Codepen */
 
-
+.offset-anchor {
+    position: relative;
+    top: -120px;
+}
 
 /* Nav */
 
@@ -566,6 +569,6 @@ footer p {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-      
+
 
 }
