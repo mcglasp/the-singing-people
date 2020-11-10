@@ -58,7 +58,3 @@ $(".navbar-nav li a").click(function (event) {
 });
 
 
-// function anchorOffset() {
-//   var elmnt = document.getElementById("about-anchor");
-//   elmnt.scrollTop = 50;
-// }
