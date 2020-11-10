@@ -36,7 +36,6 @@ function mobileFunction(x) {
         document.getElementById("navbar").style.minHeight = "55px";
         document.getElementById("navbar").style.padding = "0px 8px 4px 8px";
         document.getElementById("logo").style.fontSize = "1rem";
-        //   document.getElementById("navbarToggler").style.height = "0.1rem";
       } else {
         document.getElementById("navbar").style.minHeight = "98px";
         document.getElementById("logo").style.fontSize = "2rem";
@@ -46,8 +45,8 @@ function mobileFunction(x) {
 }
 
 var x = window.matchMedia("(max-width: 990px)");
-mobileFunction(x); // Call listener function at run time
-x.addListener(mobileFunction); // Attach listener function on state changes
+mobileFunction(x);
+x.addListener(mobileFunction);
 
 //Automatically closing toggler on click. Solution found at https://bootstrapstudio.io/forums/topic/how-to-get-a-website-menu-to-collapse-after-selection-on-mobile/ and code provided by user buntonn.
 $(".navbar-nav li a").click(function (event) {
@@ -57,3 +56,9 @@ $(".navbar-nav li a").click(function (event) {
     $(".navbar-collapse").collapse("hide");
   }
 });
+
+
+// function anchorOffset() {
+//   var elmnt = document.getElementById("about-anchor");
+//   elmnt.scrollTop = 50;
+// }
