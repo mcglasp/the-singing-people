@@ -131,37 +131,7 @@ ul {
 
 /* CREDIT Chris Coyier of CSS Tricks and Chris Ferdinandi from Codepen */
 
-#teachers-members, #video, #carousel {
-    position: relative;
-}
 
-#about-anchor {
-  display: block;
-position: absolute;
-bottom: 50px;
-  visibility: hidden;
-}
-
-#when-anchor {
-  display: block;
-position: absolute;
-bottom: 50px;
-  visibility: hidden;
-}
-
-#gallery-anchor {
-  display: block;
-position: absolute;
-bottom: 50px;
-  visibility: hidden;
-}
-
-#join-anchor {
-  display: block;
-position: absolute;
-bottom: 50px;
-  visibility: hidden;
-}
 
 /* Nav */
 
