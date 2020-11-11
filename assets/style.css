@@ -132,8 +132,8 @@ ul {
 /* CREDIT Chris Coyier of CSS Tricks and Chris Ferdinandi from Codepen */
 
 .offset-anchor {
-    position: relative;
-    top: -120px;
+  position: relative;
+  top: -120px;
 }
 
 /* Nav */
@@ -489,7 +489,6 @@ footer p {
   .no-img {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -564,11 +563,50 @@ footer p {
     padding-right: 10px;
   }
 }
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3) {
+  .offset-anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+  }
+}
 
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px)  
+    and (-webkit-device-pixel-ratio: 2){
+  .offset-anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+  }
+}
 
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2){
+  .offset-anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+  }
+}
 
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){
+  .offset-anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+  }
 }
