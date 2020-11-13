@@ -264,7 +264,7 @@ There are several elements to focus on in testing the site:
 - **Copied all CSS and HTML code to Jigsaw/W3 Schools CSS and HTML validators.** This returned warnings relating to the comments used in my HTML code ('The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.'), so these were altered. I should note that I had used this tool throughout development to correct errors and warnings to avoid replicating them throughout the site.
 - On the mobile version a hamburger icon is used to toggle the navigation links. I added some code to automatically collapse this once the user has clicked, otherwise it obscured the content.
 - Manually **checked all images to ensure they are displaying at an appropriate resolution** and maintaining the correct aspect ratio, which they were.
-- Checked that all **internal links** jumped to appropriate positions, and that they worked. The section headings were obscured by the collapsed, fixed navbar. I added some ‘hidden’ divs to anchor the links to more appropriate places.
+- Checked that all **internal links** jumped to appropriate positions, and that they worked. The section headings were obscured by the collapsed, fixed navbar. I added some ‘hidden’ divs to anchor the links to more appropriate places. When testing on an actual iOS device, unusual behaviour was found with the anchor tags. See 'Existing Bugs' below for more information. 
 - Ensured that **external links open to a new tab** and land on the correct URL. I found that my Instagram Fontawesome icon was actually directing to Twitter. This has been corrected.
 - Tested CSS/Javascript navbar transition across several browsers. I found that, regardless of the browser used, if I stopped scrolling at a very specific point, the navbar jumped continuously between two states. As this is a very minor design issue, and does not affect functionality, I will investigate this further during future development and when my Javascript skills are improved.
 
@@ -273,6 +273,22 @@ The above steps were completed in Chrome, Safari and Firefox browsers, and using
 ### Existing compromises & areas for future development
 
 My first priority for future development, and when my Javascript skills allow, will be to add a modal popup confirming the user has correctly completed the sign-up form. This was originally included in the build, but I found that I was unable to have the form complete validation of required fields and have the appearance of the modal be dependent on the results of these tests — instead, the modal appeared whether the form had been correctly completed or not. More detailed Javascript will be required for this functionality, but it is crucial to the user's positive interaction with the site to receive this kind of feedback, and it is therefore my intention to add this feature.
+
+### Existing bugs
+
+ - Navbar behaviour on iPhone/iPad: actual devices
+
+The problem of the fixed navbar obscuring headings was addressed by offsetting the anchor tags by a number of pixels to correct for the height of the navbar. This worked perfectly on all screen sizes in Chrome developer tools. However, when viewed on an actual device, I found that the navbar's behaviour was different. Specifically, it pushed the content down, rather than overlapping it. When a link was selected, it then pulled the content back up with it, thereby taking the user to content far below the anchor tag. The solutions I tried for this were extensive and included:
+- CSS media queries specifically designed to target iOS devices.
+- Experimenting with different implementations of the same approach within CSS.
+- Moving the anchor tags to different places within the HTML.
+- Using JavaScript and JQuery to implement the offset.
+
+The problem was discussed at length with two Code Institute tutors who were unable to identify the cause of the problem. I was advised by both tutors to outline the issue here and submit the project with the existing functionality, marking the problem as an area for future investigation.
+
+ - 'Join us!' buttons maintain :hover state on mobile view
+
+ This problem appeared suddenly - literally over night - when there had been no changes made to these or related classes. The bug is this: the red button turns blue when hovered over, which is correct. However, once clicked, it maintains that colour until something else on the page is clicked. To rectify this I looked closely at all colour-related CSS styles, checked for rogue Javascript code, Googled the issue and eventually discussed it with a Code Institute tutor. He was also unable to account for it and we concluded that the bug was likely to be coming from a change to the core Bootstrap styling. As the issue is purely cosmetic, does not compromise the design, and appeared apparently randomly, I have marked it down as an area to review in future development.
 
 ## Deployment
 

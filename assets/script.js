@@ -50,7 +50,7 @@ x.addListener(mobileFunction);
 
 //Automatically closing toggler on click. Solution found at https://bootstrapstudio.io/forums/topic/how-to-get-a-website-menu-to-collapse-after-selection-on-mobile/ and code provided by user buntonn.
 $('.nav-link').on('click', function(){
-    $('.navbar-toggler').click(); //bootstrap 4.x
+    $('.navbar-toggler').click();
 });
 
 
